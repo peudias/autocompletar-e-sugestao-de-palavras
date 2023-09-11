@@ -14,7 +14,7 @@
 #include <queue>
 #include <vector>
 #include <functional>
-#include <cctype> 
+#include <cctype>
 
 #define AMARELO "\x1b[33m"
 #define MAGENTA "\x1b[38;5;200m"
