@@ -1,30 +1,6 @@
 #include "include/file.hpp"
 #include "include/heap.hpp"
 
-vector<string> readUserFile(const string &filename){
-    vector<string> userWords;
-    ifstream inputFile(filename);
-
-    if (!inputFile.is_open()) {
-        cout << VERMELHO << "Erro ao abrir o arquivo de inserção do usuário: " << filename << RESET << endl;
-        return userWords;
-    }
-
-    string word;
-    while (inputFile >> word) {
-        userWords.push_back(word);
-    }
-
-    inputFile.close();
-
-    cout << VERDE << "Palavras coletadas do arquivo '" << filename << "':" << RESET << endl;
-    for (const string &w : userWords) {
-        cout << AZUL << w << RESET << endl;
-    }
-
-    return userWords;
-}
-
 unordered_set<string> readStopwords(const string &filename){
     unordered_set<string> stopwords;
     ifstream stopwordFile(filename);
@@ -92,28 +68,19 @@ void readTextFile(const string &filePath){
     unordered_set<string> stopwords = readStopwords("./dataset/stopwords.txt");
 
     processText(inputFile, frequencyMap, stopwords);
-    int k = 3;
-    processHash(frequencyMap, k);
+    int k = 10;
+    processHash(frequencyMap, k, filePath);
     
     inputFile.close();
 }
 
-void searchWords(const string &palavra, const string &arquivo) {
-    ifstream arquivoTexto(arquivo);
-    if (!arquivoTexto.is_open()) {
-        cerr << "Erro ao abrir o arquivo: " << arquivo << endl;
-        return;
-    }
-
-    string linha;
-    int numeroLinha = 0;
-    while (getline(arquivoTexto, linha)) {
-        numeroLinha++;
-        if (linha.find(palavra) != string::npos) {
-            cout << VERDE << "Palavra encontrada em " << arquivo << " (linha " << numeroLinha << "): "  << endl;
-            // << RESET << linha << endl;
+void processDirectory(const string &directoryPath){
+    if(fs::is_directory(directoryPath)){
+        for(const auto &entry : fs::directory_iterator(directoryPath)){
+            if(entry.is_regular_file()){
+                string filePath = entry.path();
+                readTextFile(filePath);
+            }
         }
     }
-
-    arquivoTexto.close();
 }

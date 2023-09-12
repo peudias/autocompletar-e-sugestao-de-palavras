@@ -10,27 +10,31 @@ void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparato
     }
 }
 
-void printMinHeap(const priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap){
-    cout << MAGENTA << "|===== Top-K-Elementos =====|" << RESET << endl;
-    cout << MAGENTA << "|== " << VERMELHO << "Palavra" << AMARELO << " vs." << VERDE << "Frequência" << MAGENTA << " ==|" << endl;
+void printMinHeap(const string &fileName, const priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, ostream &outputStream){
+    outputStream << "|===== Top-K-Elementos =====|" << endl;
+    outputStream << "|== Palavra vs. Frequência ==|" << endl;
+
+    outputStream << "|===== Arquivo: " << fileName << "=====|" << endl;
 
     int counter = 1;
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeapCopy = minHeap;
 
     while (!minHeapCopy.empty()){
         const HeapNode &node = minHeapCopy.top();
-        cout << MAGENTA << "| " << RESET;
+        outputStream << "| ";
         if(counter < 10 && counter > 0){
-            cout << "0";
+            outputStream << "0";
         }
-        cout << counter << ". " << VERMELHO << node.word << AMARELO << " vs. " << VERDE << node.count << RESET << endl;
+        outputStream << counter << ". " << node.word << " vs. " << node.count << endl;
         minHeapCopy.pop();
         counter++;
     }
-    cout << MAGENTA << "|===========================|" << RESET << endl << endl;
+    outputStream << "|===========================|" << endl << endl;
 }
 
-void processHash(const unordered_map<string, int> &frequencyMap, int k){
+void processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName){
+    ofstream outFile("./dataset/output.txt", ios::app);
+    
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap;
 
     for(const auto &entry : frequencyMap){
@@ -38,5 +42,5 @@ void processHash(const unordered_map<string, int> &frequencyMap, int k){
         insertToMinHeap(minHeap, node, k);
     }
 
-    printMinHeap(minHeap);
+    printMinHeap(fileName, minHeap, outFile);
 }
