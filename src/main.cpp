@@ -14,10 +14,10 @@ void clearConsole() {
 int main(){
     clearConsole();
     string textInput = "./dataset/input";
-    string wordInput = "./dataset/wordInput";
+    string userInput = "./dataset/wordInput";
 
     processDirectory(textInput);
-    processDirectory(wordInput);
+    processDirectory(userInput);
 
     return 0;
 }

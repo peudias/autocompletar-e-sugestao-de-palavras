@@ -33,7 +33,7 @@ void printMinHeap(const string &fileName, const priority_queue<HeapNode, vector<
 }
 
 void processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName){
-    ofstream outFile("./dataset/output.txt", ios::app);
+    ofstream outFile("./dataset/outputs/output.txt", ios::app);
     
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap;
 
