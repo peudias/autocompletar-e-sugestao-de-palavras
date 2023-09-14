@@ -56,31 +56,25 @@ void processText(istream &inputStream, unordered_map<string, int> &frequencyMap,
     }
 }
 
-void readTextFile(const string &filePath){
-    ifstream inputFile(filePath);
+void readTextFile(const string &filePath, ifstream &inputFile, unordered_map<string, int> &frequencyMap, unordered_set<string> &stopwords) {
+    inputFile.open(filePath);
 
-    if(!inputFile.is_open()){
-        cout << VERMELHO << "Erro ao abrir o arquivo de texto: " << filePath << RESET << endl;
+    if (!inputFile.is_open()) {
+        cout << "Erro ao abrir o arquivo de texto: " << filePath << endl;
         return;
     }
-
-    unordered_map<string, int> frequencyMap;
-    unordered_set<string> stopwords = readStopwords("./dataset/stopwords.txt");
-
-    processText(inputFile, frequencyMap, stopwords);
-    int k = 10;
-    processHash(frequencyMap, k, filePath);
-    
-    inputFile.close();
 }
 
-void processDirectory(const string &directoryPath){
-    if(fs::is_directory(directoryPath)){
-        for(const auto &entry : fs::directory_iterator(directoryPath)){
-            if(entry.is_regular_file()){
+vector<string> processDirectory(const string &directoryPath) {
+    vector<string> filePaths;
+
+    if (fs::is_directory(directoryPath)) {
+        for (const auto &entry : fs::directory_iterator(directoryPath)) {
+            if (entry.is_regular_file()) {
                 string filePath = entry.path();
-                readTextFile(filePath);
+                filePaths.push_back(filePath);
             }
         }
     }
+    return filePaths;
 }
