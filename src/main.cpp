@@ -6,15 +6,15 @@
 
 int main() {
     string textInput = "./dataset/input";
-    string userInput = "./dataset/wordInput";
+    string userInput = "./dataset/wordToSearch";
 
     vector<string> filePaths = processDirectory(textInput);
 
     for(const string &filePath : filePaths){
         ifstream inputFile;
         unordered_map<string, int> frequencyMap;
-        unordered_set<string> stopwords = readStopwords("./dataset/stopwords.txt");
-        readTextFile(filePath, inputFile, frequencyMap, stopwords);
+        unordered_set<string> stopwords = readStopwords("./dataset/stopwords/stopwords.txt");
+        openTextFile(filePath, inputFile);
         processText(inputFile, frequencyMap, stopwords);
         processHash(frequencyMap, k, filePath);
         inputFile.close();

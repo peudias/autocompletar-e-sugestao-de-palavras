@@ -11,8 +11,8 @@ unordered_set<string> readStopwords(const string &filename){
             stopwords.insert(stopword);
         }
         stopwordFile.close();
-    } else{
-        cout << VERMELHO << "Erro ao abrir o arquivo de stopwords!" << RESET << endl;
+    }else{
+        cout << VERMELHO << "Erro ao abrir o arquivo de " << RESET << "STOPWORDS! " << AMARELO << "(" <<  filename << ")" << RESET << endl;
     }
     return stopwords;
 }
@@ -56,21 +56,21 @@ void processText(istream &inputStream, unordered_map<string, int> &frequencyMap,
     }
 }
 
-void readTextFile(const string &filePath, ifstream &inputFile, unordered_map<string, int> &frequencyMap, unordered_set<string> &stopwords) {
+void openTextFile(const string &filePath, ifstream &inputFile){
     inputFile.open(filePath);
 
-    if (!inputFile.is_open()) {
-        cout << "Erro ao abrir o arquivo de texto: " << filePath << endl;
+    if(!inputFile.is_open()){
+        cout << VERMELHO << "Erro ao abrir o arquivo de " << RESET << "TEXTO! " << MAGENTA << "(" <<  filePath << ")" << RESET << endl << endl;
         return;
     }
 }
 
-vector<string> processDirectory(const string &directoryPath) {
+vector<string> processDirectory(const string &directoryPath){
     vector<string> filePaths;
 
-    if (fs::is_directory(directoryPath)) {
-        for (const auto &entry : fs::directory_iterator(directoryPath)) {
-            if (entry.is_regular_file()) {
+    if(fs::is_directory(directoryPath)){
+        for(const auto &entry : fs::directory_iterator(directoryPath)){
+            if(entry.is_regular_file()){
                 string filePath = entry.path();
                 filePaths.push_back(filePath);
             }
