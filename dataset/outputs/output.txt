@@ -1,0 +1,6 @@
+Palavra encontrada: assim no arquivo: ./dataset/input/ti2.txt com frequência: 201
+Palavra encontrada: assim no arquivo: ./dataset/input/filosofia2.txt com frequência: 86
+Palavra encontrada: assim no arquivo: ./dataset/input/globalizacao.txt com frequência: 199
+Palavra encontrada: assim no arquivo: ./dataset/input/ti.txt com frequência: 199
+Palavra encontrada: assim no arquivo: ./dataset/input/filosofia.txt com frequência: 94
+Palavra encontrada: assim no arquivo: ./dataset/input/politica.txt com frequência: 201

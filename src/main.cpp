@@ -22,6 +22,8 @@ int main() {
         userFile.close();
     }
 
+    ofstream outFile("./dataset/outputs/output.txt", ios::app);
+
     for(const string &filePath : filePaths){
         ifstream inputFile;
         unordered_map<string, int> frequencyMap;
@@ -31,12 +33,7 @@ int main() {
         processHash(frequencyMap, k, filePath);
         inputFile.close();
 
-        for(const auto &word : frequencyMap){
-            if (wordsToSearch.find(word.first) != wordsToSearch.end()){
-                cout << "Palavra encontrada: " << word.first << " no arquivo: " << filePath << " com frequência: " << frequencyMap[word.first] << endl;
-            }
-        }
-
+        printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
     }
 
     return 0;
