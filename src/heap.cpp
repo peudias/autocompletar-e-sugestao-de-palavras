@@ -46,12 +46,11 @@ void processHash(const unordered_map<string, int> &frequencyMap, int k, const st
 }
 
 void printWordFrequency(const unordered_map<string, int> &frequencyMap, const unordered_map<string, int> &wordsToSearch, const string &filePath, ostream &outputStream){
+    outputStream << "----------------------------------------------------" << endl;
+    outputStream << "Arquivo: " << filePath << endl << endl;
     for (const auto &word : frequencyMap) {
         if (wordsToSearch.find(word.first) != wordsToSearch.end()) {
-            outputStream << "----------------------------------------------------" << endl;
-            outputStream << "Palavra pesquisada: '" << word.first << "'" << endl << endl;  
-            outputStream << "Arquivo: " << filePath << endl;
-            outputStream << "Frequência da palavra pesquisada: '" << word.second << "'" << endl;
+            outputStream << "Palavra pesquisada: '" << word.first << "' | " << "Frequência da palavra pesquisada: '" << word.second << "'" << endl;
         }
     }
 }

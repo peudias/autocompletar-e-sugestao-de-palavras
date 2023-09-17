@@ -963,3 +963,585 @@
 | 10. político vs. 400
 |=================================|
 
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/wordToSearch/input.data|
+| 01. levar vs. 1
+| 02. assim vs. 1
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti2.txt|
+| 01. hardware vs. 200
+| 02. informações vs. 200
+| 03. dados vs. 201
+| 04. ti vs. 201
+| 05. assim vs. 201
+| 06. aumento vs. 201
+| 07. melhor vs. 201
+| 08. implantação vs. 267
+| 09. segurança vs. 268
+| 10. utilização vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia2.txt|
+| 01. sobre vs. 114
+| 02. segundo vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 119
+| 05. modo vs. 129
+| 06. condição vs. 133
+| 07. mundo vs. 144
+| 08. priori vs. 144
+| 09. sujeito vs. 149
+| 10. teoria vs. 192
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/globalizacao.txt|
+| 01. impacto vs. 134
+| 02. quadros vs. 134
+| 03. necessidade vs. 134
+| 04. pode vs. 134
+| 05. informações vs. 134
+| 06. importância vs. 134
+| 07. sistema vs. 134
+| 08. assim vs. 199
+| 09. processo vs. 200
+| 10. sentido vs. 200
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti.txt|
+| 01. impacto vs. 200
+| 02. melhor vs. 200
+| 03. aumento vs. 200
+| 04. informações vs. 201
+| 05. ti vs. 201
+| 06. dados vs. 201
+| 07. novas vs. 201
+| 08. implantação vs. 266
+| 09. segurança vs. 268
+| 10. utilização vs. 399
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia.txt|
+| 01. segundo vs. 114
+| 02. sobre vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 115
+| 05. priori vs. 125
+| 06. modo vs. 129
+| 07. condição vs. 134
+| 08. mundo vs. 134
+| 09. sujeito vs. 145
+| 10. teoria vs. 176
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/politica.txt|
+| 01. política vs. 198
+| 02. eleitores vs. 199
+| 03. metas vs. 199
+| 04. sentido vs. 200
+| 05. saúde vs. 201
+| 06. atual vs. 201
+| 07. melhoria vs. 201
+| 08. assim vs. 201
+| 09. políticas vs. 267
+| 10. político vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/wordToSearch/input.data|
+| 01. levar vs. 1
+| 02. assim vs. 1
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti2.txt|
+| 01. hardware vs. 200
+| 02. informações vs. 200
+| 03. dados vs. 201
+| 04. ti vs. 201
+| 05. assim vs. 201
+| 06. aumento vs. 201
+| 07. melhor vs. 201
+| 08. implantação vs. 267
+| 09. segurança vs. 268
+| 10. utilização vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia2.txt|
+| 01. sobre vs. 114
+| 02. segundo vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 119
+| 05. modo vs. 129
+| 06. condição vs. 133
+| 07. mundo vs. 144
+| 08. priori vs. 144
+| 09. sujeito vs. 149
+| 10. teoria vs. 192
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/globalizacao.txt|
+| 01. impacto vs. 134
+| 02. quadros vs. 134
+| 03. necessidade vs. 134
+| 04. pode vs. 134
+| 05. informações vs. 134
+| 06. importância vs. 134
+| 07. sistema vs. 134
+| 08. assim vs. 199
+| 09. processo vs. 200
+| 10. sentido vs. 200
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti.txt|
+| 01. impacto vs. 200
+| 02. melhor vs. 200
+| 03. aumento vs. 200
+| 04. informações vs. 201
+| 05. ti vs. 201
+| 06. dados vs. 201
+| 07. novas vs. 201
+| 08. implantação vs. 266
+| 09. segurança vs. 268
+| 10. utilização vs. 399
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia.txt|
+| 01. segundo vs. 114
+| 02. sobre vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 115
+| 05. priori vs. 125
+| 06. modo vs. 129
+| 07. condição vs. 134
+| 08. mundo vs. 134
+| 09. sujeito vs. 145
+| 10. teoria vs. 176
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/politica.txt|
+| 01. política vs. 198
+| 02. eleitores vs. 199
+| 03. metas vs. 199
+| 04. sentido vs. 200
+| 05. saúde vs. 201
+| 06. atual vs. 201
+| 07. melhoria vs. 201
+| 08. assim vs. 201
+| 09. políticas vs. 267
+| 10. político vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/wordToSearch/input.data|
+| 01. levar vs. 1
+| 02. assim vs. 1
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti2.txt|
+| 01. hardware vs. 200
+| 02. informações vs. 200
+| 03. dados vs. 201
+| 04. ti vs. 201
+| 05. assim vs. 201
+| 06. aumento vs. 201
+| 07. melhor vs. 201
+| 08. implantação vs. 267
+| 09. segurança vs. 268
+| 10. utilização vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia2.txt|
+| 01. sobre vs. 114
+| 02. segundo vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 119
+| 05. modo vs. 129
+| 06. condição vs. 133
+| 07. mundo vs. 144
+| 08. priori vs. 144
+| 09. sujeito vs. 149
+| 10. teoria vs. 192
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/globalizacao.txt|
+| 01. impacto vs. 134
+| 02. quadros vs. 134
+| 03. necessidade vs. 134
+| 04. pode vs. 134
+| 05. informações vs. 134
+| 06. importância vs. 134
+| 07. sistema vs. 134
+| 08. assim vs. 199
+| 09. processo vs. 200
+| 10. sentido vs. 200
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti.txt|
+| 01. impacto vs. 200
+| 02. melhor vs. 200
+| 03. aumento vs. 200
+| 04. informações vs. 201
+| 05. ti vs. 201
+| 06. dados vs. 201
+| 07. novas vs. 201
+| 08. implantação vs. 266
+| 09. segurança vs. 268
+| 10. utilização vs. 399
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia.txt|
+| 01. segundo vs. 114
+| 02. sobre vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 115
+| 05. priori vs. 125
+| 06. modo vs. 129
+| 07. condição vs. 134
+| 08. mundo vs. 134
+| 09. sujeito vs. 145
+| 10. teoria vs. 176
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/politica.txt|
+| 01. política vs. 198
+| 02. eleitores vs. 199
+| 03. metas vs. 199
+| 04. sentido vs. 200
+| 05. saúde vs. 201
+| 06. atual vs. 201
+| 07. melhoria vs. 201
+| 08. assim vs. 201
+| 09. políticas vs. 267
+| 10. político vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/wordToSearch/input.data|
+| 01. levar vs. 1
+| 02. assim vs. 1
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti2.txt|
+| 01. hardware vs. 200
+| 02. informações vs. 200
+| 03. dados vs. 201
+| 04. ti vs. 201
+| 05. assim vs. 201
+| 06. aumento vs. 201
+| 07. melhor vs. 201
+| 08. implantação vs. 267
+| 09. segurança vs. 268
+| 10. utilização vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia2.txt|
+| 01. sobre vs. 114
+| 02. segundo vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 119
+| 05. modo vs. 129
+| 06. condição vs. 133
+| 07. mundo vs. 144
+| 08. priori vs. 144
+| 09. sujeito vs. 149
+| 10. teoria vs. 192
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/globalizacao.txt|
+| 01. impacto vs. 134
+| 02. quadros vs. 134
+| 03. necessidade vs. 134
+| 04. pode vs. 134
+| 05. informações vs. 134
+| 06. importância vs. 134
+| 07. sistema vs. 134
+| 08. assim vs. 199
+| 09. processo vs. 200
+| 10. sentido vs. 200
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti.txt|
+| 01. impacto vs. 200
+| 02. melhor vs. 200
+| 03. aumento vs. 200
+| 04. informações vs. 201
+| 05. ti vs. 201
+| 06. dados vs. 201
+| 07. novas vs. 201
+| 08. implantação vs. 266
+| 09. segurança vs. 268
+| 10. utilização vs. 399
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia.txt|
+| 01. segundo vs. 114
+| 02. sobre vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 115
+| 05. priori vs. 125
+| 06. modo vs. 129
+| 07. condição vs. 134
+| 08. mundo vs. 134
+| 09. sujeito vs. 145
+| 10. teoria vs. 176
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/politica.txt|
+| 01. política vs. 198
+| 02. eleitores vs. 199
+| 03. metas vs. 199
+| 04. sentido vs. 200
+| 05. saúde vs. 201
+| 06. atual vs. 201
+| 07. melhoria vs. 201
+| 08. assim vs. 201
+| 09. políticas vs. 267
+| 10. político vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/wordToSearch/input.data|
+| 01. levar vs. 1
+| 02. assim vs. 1
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti2.txt|
+| 01. hardware vs. 200
+| 02. informações vs. 200
+| 03. dados vs. 201
+| 04. ti vs. 201
+| 05. assim vs. 201
+| 06. aumento vs. 201
+| 07. melhor vs. 201
+| 08. implantação vs. 267
+| 09. segurança vs. 268
+| 10. utilização vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia2.txt|
+| 01. sobre vs. 114
+| 02. segundo vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 119
+| 05. modo vs. 129
+| 06. condição vs. 133
+| 07. mundo vs. 144
+| 08. priori vs. 144
+| 09. sujeito vs. 149
+| 10. teoria vs. 192
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/globalizacao.txt|
+| 01. impacto vs. 134
+| 02. quadros vs. 134
+| 03. necessidade vs. 134
+| 04. pode vs. 134
+| 05. informações vs. 134
+| 06. importância vs. 134
+| 07. sistema vs. 134
+| 08. assim vs. 199
+| 09. processo vs. 200
+| 10. sentido vs. 200
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti.txt|
+| 01. impacto vs. 200
+| 02. melhor vs. 200
+| 03. aumento vs. 200
+| 04. informações vs. 201
+| 05. ti vs. 201
+| 06. dados vs. 201
+| 07. novas vs. 201
+| 08. implantação vs. 266
+| 09. segurança vs. 268
+| 10. utilização vs. 399
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia.txt|
+| 01. segundo vs. 114
+| 02. sobre vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 115
+| 05. priori vs. 125
+| 06. modo vs. 129
+| 07. condição vs. 134
+| 08. mundo vs. 134
+| 09. sujeito vs. 145
+| 10. teoria vs. 176
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/politica.txt|
+| 01. política vs. 198
+| 02. eleitores vs. 199
+| 03. metas vs. 199
+| 04. sentido vs. 200
+| 05. saúde vs. 201
+| 06. atual vs. 201
+| 07. melhoria vs. 201
+| 08. assim vs. 201
+| 09. políticas vs. 267
+| 10. político vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/wordToSearch/input.data|
+| 01. levar vs. 1
+| 02. assim vs. 1
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti2.txt|
+| 01. hardware vs. 200
+| 02. informações vs. 200
+| 03. dados vs. 201
+| 04. ti vs. 201
+| 05. assim vs. 201
+| 06. aumento vs. 201
+| 07. melhor vs. 201
+| 08. implantação vs. 267
+| 09. segurança vs. 268
+| 10. utilização vs. 400
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia2.txt|
+| 01. sobre vs. 114
+| 02. segundo vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 119
+| 05. modo vs. 129
+| 06. condição vs. 133
+| 07. mundo vs. 144
+| 08. priori vs. 144
+| 09. sujeito vs. 149
+| 10. teoria vs. 192
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/globalizacao.txt|
+| 01. impacto vs. 134
+| 02. quadros vs. 134
+| 03. necessidade vs. 134
+| 04. pode vs. 134
+| 05. informações vs. 134
+| 06. importância vs. 134
+| 07. sistema vs. 134
+| 08. assim vs. 199
+| 09. processo vs. 200
+| 10. sentido vs. 200
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/ti.txt|
+| 01. impacto vs. 200
+| 02. melhor vs. 200
+| 03. aumento vs. 200
+| 04. informações vs. 201
+| 05. ti vs. 201
+| 06. dados vs. 201
+| 07. novas vs. 201
+| 08. implantação vs. 266
+| 09. segurança vs. 268
+| 10. utilização vs. 399
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/filosofia.txt|
+| 01. segundo vs. 114
+| 02. sobre vs. 114
+| 03. pensamento vs. 115
+| 04. sistema vs. 115
+| 05. priori vs. 125
+| 06. modo vs. 129
+| 07. condição vs. 134
+| 08. mundo vs. 134
+| 09. sujeito vs. 145
+| 10. teoria vs. 176
+|=================================|
+
+|======== Top-K-Elementos ========|
+|===== Palavra vs. Frequência ====|
+| Arquivo: ./dataset/input/politica.txt|
+| 01. política vs. 198
+| 02. eleitores vs. 199
+| 03. metas vs. 199
+| 04. sentido vs. 200
+| 05. saúde vs. 201
+| 06. atual vs. 201
+| 07. melhoria vs. 201
+| 08. assim vs. 201
+| 09. políticas vs. 267
+| 10. político vs. 400
+|=================================|
+

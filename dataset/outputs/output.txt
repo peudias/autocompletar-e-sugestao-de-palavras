@@ -1,0 +1,30 @@
+----------------------------------------------------
+Arquivo: ./dataset/input/ti2.txt
+
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
+Palavra pesquisada: 'levar' | Frequência da palavra pesquisada: '67'
+----------------------------------------------------
+Arquivo: ./dataset/input/filosofia2.txt
+
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
+Palavra pesquisada: 'levar' | Frequência da palavra pesquisada: '20'
+----------------------------------------------------
+Arquivo: ./dataset/input/globalizacao.txt
+
+Palavra pesquisada: 'levar' | Frequência da palavra pesquisada: '67'
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
+----------------------------------------------------
+Arquivo: ./dataset/input/ti.txt
+
+Palavra pesquisada: 'levar' | Frequência da palavra pesquisada: '66'
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
+----------------------------------------------------
+Arquivo: ./dataset/input/filosofia.txt
+
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
+Palavra pesquisada: 'levar' | Frequência da palavra pesquisada: '19'
+----------------------------------------------------
+Arquivo: ./dataset/input/politica.txt
+
+Palavra pesquisada: 'levar' | Frequência da palavra pesquisada: '67'
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
