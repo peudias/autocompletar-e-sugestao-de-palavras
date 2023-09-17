@@ -9,6 +9,18 @@ int main() {
     string userInput = "./dataset/wordToSearch";
 
     vector<string> filePaths = processDirectory(textInput);
+    vector<string> filePathsUser = processDirectory(userInput);
+
+    unordered_map<string, int> wordsToSearch;
+
+    for(const string &filePath : filePathsUser){
+        ifstream userFile;
+        unordered_set<string> stopwords = readStopwords("./dataset/stopwords/stopwords.txt");
+        openTextFile(filePath, userFile);
+        processText(userFile, wordsToSearch, stopwords);
+        processHash(wordsToSearch, k, filePath);
+        userFile.close();
+    }
 
     for(const string &filePath : filePaths){
         ifstream inputFile;
@@ -18,6 +30,13 @@ int main() {
         processText(inputFile, frequencyMap, stopwords);
         processHash(frequencyMap, k, filePath);
         inputFile.close();
+
+        for(const auto &word : frequencyMap){
+            if (wordsToSearch.find(word.first) != wordsToSearch.end()){
+                cout << "Palavra encontrada: " << word.first << " no arquivo: " << filePath << " com frequência: " << frequencyMap[word.first] << endl;
+            }
+        }
+
     }
 
     return 0;
