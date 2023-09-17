@@ -11,25 +11,28 @@ void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparato
 }
 
 void printMinHeap(const string &fileName, const priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, ostream &outputStream){
-    outputStream << "|======== Top-K-Elementos ========|" << endl;
-    outputStream << "|===== Palavra vs. Frequência ====|" << endl;
+    // outputStream << "|======== Top-K-Elementos ========|" << endl;
+    // outputStream << "|===== Palavra vs. Frequência ====|" << endl;
     
-    outputStream << "| Arquivo: " << fileName << "|" << endl;
+    // outputStream << "| Arquivo: " << fileName << "|" << endl;
+
+    outputStream << endl << "Palavras mais relevantes: " ;
 
     int counter = 1;
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeapCopy = minHeap;
 
     while (!minHeapCopy.empty()){
         const HeapNode &node = minHeapCopy.top();
-        outputStream << "| ";
-        if(counter < 10 && counter > 0){
-            outputStream << "0";
-        }
-        outputStream << counter << ". " << node.word << " vs. " << node.count << endl;
+        // outputStream << "| ";
+        // if(counter < 10 && counter > 0){
+        //     outputStream << "0";
+        // }
+        // outputStream << counter << ". " << node.word << " vs. " << node.count;
+        outputStream << node.word << ", ";
         minHeapCopy.pop();
         counter++;
     }
-    outputStream << "|=================================|" << endl << endl;
+    // outputStream << "|=================================|" << endl << endl;
 }
 
 void processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName){
