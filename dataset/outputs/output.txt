@@ -1,0 +1,54 @@
+
+----------------------------------------------------
+Arquivo: ./dataset/input/ti2.txt
+
+> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '200'
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '199'
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
+
+Palavras mais relevantes: informações (200), dados (201), ti (201), aumento (201), melhor (201), implantação (267), segurança (268), utilização (400), 
+
+----------------------------------------------------
+Arquivo: ./dataset/input/filosofia2.txt
+
+> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
+> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '20'
+
+Palavras mais relevantes: sobre (114), segundo (114), pensamento (115), sistema (119), modo (129), condição (133), mundo (144), priori (144), sujeito (149), teoria (192), 
+
+----------------------------------------------------
+Arquivo: ./dataset/input/globalizacao.txt
+
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
+
+Palavras mais relevantes: quadros (134), necessidade (134), pode (134), informações (134), importância (134), sistema (134), processo (200), sentido (200), 
+
+----------------------------------------------------
+Arquivo: ./dataset/input/ti.txt
+
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '200'
+> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '199'
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
+
+Palavras mais relevantes: melhor (200), aumento (200), informações (201), ti (201), dados (201), novas (201), implantação (266), segurança (268), utilização (399), 
+
+----------------------------------------------------
+Arquivo: ./dataset/input/filosofia.txt
+
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
+> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '19'
+> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
+
+Palavras mais relevantes: segundo (114), sobre (114), pensamento (115), sistema (115), priori (125), modo (129), condição (134), mundo (134), sujeito (145), teoria (176), 
+
+----------------------------------------------------
+Arquivo: ./dataset/input/politica.txt
+
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
+
+Palavras mais relevantes: política (198), eleitores (199), metas (199), sentido (200), saúde (201), atual (201), melhoria (201), políticas (267), político (400), 

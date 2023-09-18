@@ -33,7 +33,7 @@ int main() {
         processHash(frequencyMap, k, filePath);
         priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap = processHash(frequencyMap, k, filePath);
         printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
-        printMinHeap(filePath, minHeap, outFile);
+        printMinHeap(filePath, minHeap, outFile, wordsToSearch);
         inputFile.close();
     }
 
