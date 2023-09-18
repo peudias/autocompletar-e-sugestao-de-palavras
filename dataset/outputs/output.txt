@@ -1,0 +1,39 @@
+
+----------------------------------------------------
+Arquivo: ./dataset/input/ti2.txt
+
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
+
+Palavras mais relevantes: dados, melhor, implantação, segurança, utilização, 
+----------------------------------------------------
+Arquivo: ./dataset/input/filosofia2.txt
+
+Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
+
+Palavras mais relevantes: condição, mundo, priori, sujeito, teoria, 
+----------------------------------------------------
+Arquivo: ./dataset/input/globalizacao.txt
+
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
+
+Palavras mais relevantes: estabelecimento, importância, assim, processo, sentido, 
+----------------------------------------------------
+Arquivo: ./dataset/input/ti.txt
+
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
+
+Palavras mais relevantes: novas, ti, implantação, segurança, utilização, 
+----------------------------------------------------
+Arquivo: ./dataset/input/filosofia.txt
+
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
+Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
+
+Palavras mais relevantes: modo, mundo, condição, sujeito, teoria, 
+----------------------------------------------------
+Arquivo: ./dataset/input/politica.txt
+
+Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
+
+Palavras mais relevantes: atual, assim, melhoria, políticas, político, 

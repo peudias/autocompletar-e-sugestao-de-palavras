@@ -2,7 +2,7 @@
 #include "include/file.hpp"
 #include "include/heap.hpp"
 #include "include/tree.hpp"
-#define k 10
+#define k 5
 
 int main() {
     string textInput = "./dataset/input";
@@ -18,7 +18,7 @@ int main() {
         unordered_set<string> stopwords = readStopwords("./dataset/stopwords/stopwords.txt");
         openTextFile(filePath, userFile);
         processText(userFile, wordsToSearch, stopwords);
-        processHash(wordsToSearch, k, filePath);
+        //processHash(wordsToSearch, k, filePath);
         userFile.close();
     }
 
@@ -31,9 +31,11 @@ int main() {
         openTextFile(filePath, inputFile);
         processText(inputFile, frequencyMap, stopwords);
         processHash(frequencyMap, k, filePath);
+        priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap = processHash(frequencyMap, k, filePath);
+        printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
+        printMinHeap(filePath, minHeap, outFile);
         inputFile.close();
 
-        printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
     }
 
     return 0;

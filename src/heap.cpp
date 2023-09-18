@@ -24,8 +24,8 @@ void printMinHeap(const string &fileName, const priority_queue<HeapNode, vector<
     }
 }
 
-void processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName){
-    ofstream outFile("./dataset/outputs/minHeap.txt", ios::app);
+priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName){
+    ofstream outFile("./dataset/outputs/output.txt", ios::app);
     
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap;
 
@@ -34,11 +34,12 @@ void processHash(const unordered_map<string, int> &frequencyMap, int k, const st
         insertToMinHeap(minHeap, node, k);
     }
 
-    printMinHeap(fileName, minHeap, outFile);
+    // printMinHeap(fileName, minHeap, outFile);
+    return minHeap;
 }
 
 void printWordFrequency(const unordered_map<string, int> &frequencyMap, const unordered_map<string, int> &wordsToSearch, const string &filePath, ostream &outputStream){
-    outputStream << "----------------------------------------------------" << endl;
+    outputStream << endl << "----------------------------------------------------" << endl;
     outputStream << "Arquivo: " << filePath << endl << endl;
     for (const auto &word : frequencyMap) {
         if (wordsToSearch.find(word.first) != wordsToSearch.end()) {
