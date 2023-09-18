@@ -2,7 +2,7 @@
 #include "include/file.hpp"
 #include "include/heap.hpp"
 #include "include/tree.hpp"
-#define k 5
+#define k 10
 
 int main() {
     string textInput = "./dataset/input";
@@ -35,7 +35,6 @@ int main() {
         printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
         printMinHeap(filePath, minHeap, outFile);
         inputFile.close();
-
     }
 
     return 0;

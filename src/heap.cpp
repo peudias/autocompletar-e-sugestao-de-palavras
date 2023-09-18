@@ -18,7 +18,7 @@ void printMinHeap(const string &fileName, const priority_queue<HeapNode, vector<
 
     while (!minHeapCopy.empty()){
         const HeapNode &node = minHeapCopy.top();
-        outputStream << node.word << ", ";
+        outputStream << node.word << " (" << node.count << ")" << ", ";
         minHeapCopy.pop();
         counter++;
     }
@@ -43,7 +43,7 @@ void printWordFrequency(const unordered_map<string, int> &frequencyMap, const un
     outputStream << "Arquivo: " << filePath << endl << endl;
     for (const auto &word : frequencyMap) {
         if (wordsToSearch.find(word.first) != wordsToSearch.end()) {
-            outputStream << "Palavra pesquisada: '" << word.first << "' | " << "Frequência da palavra pesquisada: '" << word.second << "'" << endl;
+            outputStream << "> Palavra pesquisada: '" << word.first << "' | " << "Frequência da palavra pesquisada: '" << word.second << "'" << endl;
         }
     }
 }
