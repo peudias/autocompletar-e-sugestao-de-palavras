@@ -18,7 +18,7 @@ Quantidade de palavras analisadas: 4
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '20'
 
-Palavras mais relevantes: 
+Palavras mais relevantes: sobre (114), segundo (114), pensamento (115), sistema (119), modo (129), condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/globalizacao.txt
@@ -48,7 +48,7 @@ Quantidade de palavras analisadas: 4
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '19'
 > Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
 
-Palavras mais relevantes: 
+Palavras mais relevantes: segundo (114), sobre (114), pensamento (115), sistema (115), priori (125), modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/politica.txt

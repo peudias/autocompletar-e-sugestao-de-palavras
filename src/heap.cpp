@@ -36,6 +36,44 @@ void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNo
         }
     }
 
+    if (!found) {
+        // Crie uma lista de novas palavras em ordem decrescente de frequência
+        vector<pair<string, int>> newWords;
+
+        for (const auto &entry : frequencyMap) {
+            auto it = wordToCheck.find(entry.first);
+            if (it == wordToCheck.end()) {
+                newWords.push_back(entry);
+            }
+        }
+
+        // Ordene a lista de novas palavras por frequência em ordem decrescente
+        sort(newWords.begin(), newWords.end(), [](const pair<string, int> &a, const pair<string, int> &b) {
+            return a.second > b.second;
+        });
+
+        // Adicione as novas palavras de maior frequência à min-heap
+        priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> newHeap;
+        for (const auto &wordPair : newWords) {
+            HeapNode node(wordPair.first, wordPair.second);
+            newHeap.push(node);
+        }
+
+        // Mantenha apenas as k palavras mais relevantes
+        while (newHeap.size() > k) {
+            newHeap.pop();
+        }
+
+        minHeap = newHeap;
+
+        // Imprima as palavras adicionadas
+        while (!newHeap.empty()) {
+            HeapNode newNode = newHeap.top();
+            newHeap.pop();
+            outputStream << newNode.word << " (" << newNode.count << "), ";
+        }
+    }
+
     if (found) {
         // Crie uma lista de novas palavras em ordem decrescente de frequência
         vector<pair<string, int>> newWords;
