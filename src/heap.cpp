@@ -13,99 +13,36 @@ void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparato
 void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, ostream &outputStream, const unordered_map<string, int> &wordToCheck, const unordered_map<string, int> &frequencyMap, int k) {
     outputStream << endl << "Palavras mais relevantes: ";
 
-    int counter = 0;
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeapCopy = minHeap;
-
     bool found = false;
 
-    while (!minHeapCopy.empty()) {
-        HeapNode node = minHeapCopy.top();
-        minHeapCopy.pop();
-
-        auto it = wordToCheck.find(node.word);
-        if (it != wordToCheck.end()) {
-            found = true;
-            continue;
-        }
-        //outputStream << node.word << " (" << node.count << "), ";
-        counter++;
-
-        // Verifique se já imprimiu k palavras (ou mais)
-        if (counter >= k) {
-            break;
-        }
-    }
-
-    if (!found) {
-        // Crie uma lista de novas palavras em ordem decrescente de frequência
+    if(!found){
         vector<pair<string, int>> newWords;
 
-        for (const auto &entry : frequencyMap) {
+        for(const auto &entry : frequencyMap){
             auto it = wordToCheck.find(entry.first);
-            if (it == wordToCheck.end()) {
+            if (it == wordToCheck.end()){
                 newWords.push_back(entry);
             }
         }
 
-        // Ordene a lista de novas palavras por frequência em ordem decrescente
-        sort(newWords.begin(), newWords.end(), [](const pair<string, int> &a, const pair<string, int> &b) {
+        sort(newWords.begin(), newWords.end(), [](const pair<string, int> &a, const pair<string, int> &b){
             return a.second > b.second;
         });
 
-        // Adicione as novas palavras de maior frequência à min-heap
         priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> newHeap;
-        for (const auto &wordPair : newWords) {
+        for(const auto &wordPair : newWords){
             HeapNode node(wordPair.first, wordPair.second);
             newHeap.push(node);
         }
 
-        // Mantenha apenas as k palavras mais relevantes
-        while (newHeap.size() > k) {
+        while(newHeap.size() > k){
             newHeap.pop();
         }
 
         minHeap = newHeap;
 
-        // Imprima as palavras adicionadas
-        while (!newHeap.empty()) {
-            HeapNode newNode = newHeap.top();
-            newHeap.pop();
-            outputStream << newNode.word << " (" << newNode.count << "), ";
-        }
-    }
-
-    if (found) {
-        // Crie uma lista de novas palavras em ordem decrescente de frequência
-        vector<pair<string, int>> newWords;
-
-        for (const auto &entry : frequencyMap) {
-            auto it = wordToCheck.find(entry.first);
-            if (it == wordToCheck.end()) {
-                newWords.push_back(entry);
-            }
-        }
-
-        // Ordene a lista de novas palavras por frequência em ordem decrescente
-        sort(newWords.begin(), newWords.end(), [](const pair<string, int> &a, const pair<string, int> &b) {
-            return a.second > b.second;
-        });
-
-        // Adicione as novas palavras de maior frequência à min-heap
-        priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> newHeap;
-        for (const auto &wordPair : newWords) {
-            HeapNode node(wordPair.first, wordPair.second);
-            newHeap.push(node);
-        }
-
-        // Mantenha apenas as k palavras mais relevantes
-        while (newHeap.size() > k) {
-            newHeap.pop();
-        }
-
-        minHeap = newHeap;
-
-        // Imprima as palavras adicionadas
-        while (!newHeap.empty()) {
+        while(!newHeap.empty()){
             HeapNode newNode = newHeap.top();
             newHeap.pop();
             outputStream << newNode.word << " (" << newNode.count << "), ";
@@ -114,11 +51,6 @@ void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNo
 
     outputStream << endl;
 }
-
-
-
-
-
 
 priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName, int wordCount){
     ofstream outFile("./dataset/outputs/output.txt", ios::app);
@@ -130,19 +62,8 @@ priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> processHash(const 
         insertToMinHeap(minHeap, node, k, wordCount);
     }
 
-    // printMinHeap(fileName, minHeap, outFile);
     return minHeap;
 }
-
-// void printWordFrequency(const unordered_map<string, int> &frequencyMap, const unordered_map<string, int> &wordsToSearch, const string &filePath, ostream &outputStream){
-//     outputStream << endl << "----------------------------------------------------" << endl;
-//     outputStream << "Arquivo: " << filePath << endl << endl;
-//     for (const auto &word : frequencyMap) {
-//         if (wordsToSearch.find(word.first) != wordsToSearch.end()) {
-//             outputStream << "> Palavra pesquisada: '" << word.first << "' | " << "Frequência da palavra pesquisada: '" << word.second << "'" << endl;
-//         }
-//     }
-// }
 
 void printWordFrequency(const unordered_map<string, int> &frequencyMap, const unordered_map<string, int> &wordsToSearch, const string &filePath, ostream &outputStream){
     outputStream << endl << "----------------------------------------------------" << endl;
