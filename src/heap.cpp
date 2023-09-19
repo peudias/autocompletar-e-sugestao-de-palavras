@@ -2,7 +2,7 @@
 #include "include/tree.hpp"
 
 void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, const HeapNode &node, int k, int wordCount){
-    if(minHeap.size() < (k + wordCount)){
+    if(minHeap.size() < k){
         minHeap.push(node);
     }else if(node.count > minHeap.top().count){
         minHeap.pop();
@@ -27,7 +27,7 @@ void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNo
             found = true;
             continue;
         }
-        outputStream << node.word << " (" << node.count << "), ";
+        //outputStream << node.word << " (" << node.count << "), ";
         counter++;
 
         // Verifique se já imprimiu k palavras (ou mais)
@@ -37,24 +37,12 @@ void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNo
     }
 
     if (found) {
-        priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> newHeap;
-
-        while (!minHeap.empty()) {
-            HeapNode topNode = minHeap.top();
-            minHeap.pop();
-
-            auto it = wordToCheck.find(topNode.word);
-            if (it == wordToCheck.end()) {
-                newHeap.push(topNode);
-            }
-        }
-
         // Crie uma lista de novas palavras em ordem decrescente de frequência
         vector<pair<string, int>> newWords;
 
         for (const auto &entry : frequencyMap) {
             auto it = wordToCheck.find(entry.first);
-            if (it == wordToCheck.end() && entry.second > minHeapCopy.top().count) {
+            if (it == wordToCheck.end()) {
                 newWords.push_back(entry);
             }
         }
@@ -65,24 +53,30 @@ void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNo
         });
 
         // Adicione as novas palavras de maior frequência à min-heap
+        priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> newHeap;
         for (const auto &wordPair : newWords) {
             HeapNode node(wordPair.first, wordPair.second);
             newHeap.push(node);
         }
 
+        // Mantenha apenas as k palavras mais relevantes
+        while (newHeap.size() > k) {
+            newHeap.pop();
+        }
+
         minHeap = newHeap;
 
         // Imprima as palavras adicionadas
-        while (counter < k && !newHeap.empty()) {
+        while (!newHeap.empty()) {
             HeapNode newNode = newHeap.top();
             newHeap.pop();
             outputStream << newNode.word << " (" << newNode.count << "), ";
-            counter++;
         }
     }
 
     outputStream << endl;
 }
+
 
 
 
