@@ -21,7 +21,7 @@ int main() {
         userFile.close();
     }
 
-    ofstream outFile("./dataset/outputs/output.txt", ios::app);
+    ofstream outFile("./dataset/outputs/output.data", ios::app);
 
     for(const string &filePath : filePaths){
         ifstream inputFile;
