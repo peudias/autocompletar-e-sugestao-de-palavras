@@ -110,7 +110,7 @@ void searchWords(const string &palavra, const string &arquivo) {
     while (getline(arquivoTexto, linha)) {
         numeroLinha++;
         if (linha.find(palavra) != string::npos) {
-            cout << VERDE << "Palavra encontrada em " << arquivo << " (linha " << numeroLinha << "): "  << endl;
+            //cout << VERDE << "Palavra encontrada em " << arquivo << " (linha " << numeroLinha << "): "  << endl;
             // << RESET << linha << endl;
         }
     }
