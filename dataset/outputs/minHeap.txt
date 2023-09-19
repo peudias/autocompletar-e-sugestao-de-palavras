@@ -1,0 +1,114 @@
+|===== Top-K-Elementos =====|
+|== Palavra vs.Frequência ==|
+| 01. impacto vs. 199
+| 02. sistema vs. 199
+| 03. tempo vs. 199
+| 04. desenvolvimento vs. 199
+| 05. novas vs. 199
+| 06. hardware vs. 200
+| 07. informações vs. 200
+| 08. melhor vs. 201
+| 09. ti vs. 201
+| 10. aumento vs. 201
+| 11. assim vs. 201
+| 12. dados vs. 201
+| 13. implantação vs. 267
+| 14. segurança vs. 268
+| 15. utilização vs. 400
+|===========================|
+
+|===== Top-K-Elementos =====|
+|== Palavra vs.Frequência ==|
+| 01. wittgenstein vs. 95
+| 02. pode vs. 96
+| 03. princípio vs. 97
+| 04. imanente vs. 109
+| 05. sentido vs. 111
+| 06. sobre vs. 114
+| 07. segundo vs. 114
+| 08. pensamento vs. 115
+| 09. sistema vs. 119
+| 10. modo vs. 129
+| 11. condição vs. 133
+| 12. priori vs. 144
+| 13. mundo vs. 144
+| 14. sujeito vs. 149
+| 15. teoria vs. 192
+|===========================|
+
+|===== Top-K-Elementos =====|
+|== Palavra vs.Frequência ==|
+| 01. importância vs. 134
+| 02. necessidade vs. 134
+| 03. melhoria vs. 134
+| 04. estabelecimento vs. 134
+| 05. informações vs. 134
+| 06. sistema vs. 134
+| 07. pode vs. 134
+| 08. quadros vs. 134
+| 09. formas vs. 134
+| 10. podemos vs. 134
+| 11. modo vs. 134
+| 12. impacto vs. 134
+| 13. assim vs. 199
+| 14. sentido vs. 200
+| 15. processo vs. 200
+|===========================|
+
+|===== Top-K-Elementos =====|
+|== Palavra vs.Frequência ==|
+| 01. assim vs. 199
+| 02. tempo vs. 199
+| 03. hardware vs. 199
+| 04. melhor vs. 200
+| 05. sistema vs. 200
+| 06. desenvolvimento vs. 200
+| 07. impacto vs. 200
+| 08. aumento vs. 200
+| 09. ti vs. 201
+| 10. dados vs. 201
+| 11. informações vs. 201
+| 12. novas vs. 201
+| 13. implantação vs. 266
+| 14. segurança vs. 268
+| 15. utilização vs. 399
+|===========================|
+
+|===== Top-K-Elementos =====|
+|== Palavra vs.Frequência ==|
+| 01. quanto vs. 95
+| 02. É vs. 96
+| 03. vista vs. 96
+| 04. imanente vs. 104
+| 05. sentido vs. 110
+| 06. segundo vs. 114
+| 07. sobre vs. 114
+| 08. sistema vs. 115
+| 09. pensamento vs. 115
+| 10. priori vs. 125
+| 11. modo vs. 129
+| 12. mundo vs. 134
+| 13. condição vs. 134
+| 14. sujeito vs. 145
+| 15. teoria vs. 176
+|===========================|
+
+|===== Top-K-Elementos =====|
+|== Palavra vs.Frequência ==|
+| 01. importância vs. 134
+| 02. longo vs. 134
+| 03. É vs. 134
+| 04. ainda vs. 134
+| 05. processo vs. 198
+| 06. política vs. 198
+| 07. metas vs. 199
+| 08. eleitores vs. 199
+| 09. sentido vs. 200
+| 10. melhoria vs. 201
+| 11. assim vs. 201
+| 12. saúde vs. 201
+| 13. atual vs. 201
+| 14. políticas vs. 267
+| 15. político vs. 400
+|===========================|
+
