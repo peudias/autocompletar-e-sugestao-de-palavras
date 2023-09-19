@@ -1,7 +1,7 @@
 #include "include/heap.hpp"
 #include "include/tree.hpp"
 
-void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, const HeapNode &node, int k, int wordCount){
+void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, const HeapNode &node, int k){
     if(minHeap.size() < k){
         minHeap.push(node);
     }else if(node.count > minHeap.top().count){
@@ -52,14 +52,14 @@ void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNo
     outputStream << endl;
 }
 
-priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName, int wordCount){
+priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName){
     ofstream outFile("./dataset/outputs/output.txt", ios::app);
     
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap;
 
     for(const auto &entry : frequencyMap){
         HeapNode node(entry.first, entry.second);
-        insertToMinHeap(minHeap, node, k, wordCount);
+        insertToMinHeap(minHeap, node, k);
     }
 
     return minHeap;
@@ -68,21 +68,21 @@ priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> processHash(const 
 void printWordFrequency(const unordered_map<string, int> &frequencyMap, const unordered_map<string, int> &wordsToSearch, const string &filePath, ostream &outputStream){
     outputStream << endl << "----------------------------------------------------" << endl;
     outputStream << "Arquivo: " << filePath << endl << endl;
-    int wordCount = countWords(frequencyMap, wordsToSearch);  // Chama a função para contar as palavras
+    int wordCount = countWords(frequencyMap, wordsToSearch);
     outputStream << "Quantidade de palavras analisadas: " << wordCount << endl;
-    for (const auto &word : frequencyMap) {
-        if (wordsToSearch.find(word.first) != wordsToSearch.end()) {
+    for(const auto &word : frequencyMap){
+        if(wordsToSearch.find(word.first) != wordsToSearch.end()){
             outputStream << "> Palavra pesquisada: '" << word.first << "' | " << "Frequência da palavra pesquisada: '" << word.second << "'" << endl;
         }
     }
 }
 
 int countWords(const unordered_map<string, int> &frequencyMap, const unordered_map<string, int> &wordsToSearch){
-    int wordCount = 0;  // Variável para contar o número de palavras analisadas
-    for (const auto &word : frequencyMap) {
-        if (wordsToSearch.find(word.first) != wordsToSearch.end()) {
+    int wordCount = 0; 
+    for(const auto &word : frequencyMap){
+        if (wordsToSearch.find(word.first) != wordsToSearch.end()){
             wordCount++;
         }
     }
-    return wordCount;  // Retorna o número total de palavras analisadas
+    return wordCount;
 }

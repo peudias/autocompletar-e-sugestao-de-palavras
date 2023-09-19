@@ -2,7 +2,7 @@
 #include "include/file.hpp"
 #include "include/heap.hpp"
 #include "include/tree.hpp"
-#define k 10
+#define k 5
 
 int main() {
     string textInput = "./dataset/input";
@@ -33,7 +33,7 @@ int main() {
         processText(inputFile, frequencyMap, stopwords);
         // processHash(frequencyMap, k, filePath);
         wordCount = countWords(frequencyMap, wordsToSearch);
-        priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap = processHash(frequencyMap, k, filePath, wordCount);
+        priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap = processHash(frequencyMap, k, filePath);
         printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
         printMinHeap(filePath, minHeap, outFile, wordsToSearch, frequencyMap, k);
         inputFile.close();
