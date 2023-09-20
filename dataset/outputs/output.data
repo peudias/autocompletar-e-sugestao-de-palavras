@@ -9,7 +9,7 @@ Quantidade de palavras analisadas: 3
 
 Palavras mais relevantes: melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
 Árvore binária em ordem:
-
+melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/filosofia2.txt
@@ -22,7 +22,7 @@ Quantidade de palavras analisadas: 4
 
 Palavras mais relevantes: condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
 Árvore binária em ordem:
-
+condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/globalizacao.txt
@@ -33,7 +33,7 @@ Quantidade de palavras analisadas: 2
 
 Palavras mais relevantes: É (134), necessidade (134), importância (134), sentido (200), processo (200), 
 Árvore binária em ordem:
-
+É (134), necessidade (134), importância (134), sentido (200), processo (200), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/ti.txt
@@ -45,7 +45,7 @@ Quantidade de palavras analisadas: 3
 
 Palavras mais relevantes: ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
 Árvore binária em ordem:
-
+ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/filosofia.txt
@@ -58,84 +58,7 @@ Quantidade de palavras analisadas: 4
 
 Palavras mais relevantes: modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
 Árvore binária em ordem:
-
-
-----------------------------------------------------
-Arquivo: ./dataset/input/politica.txt
-
-Quantidade de palavras analisadas: 2
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
-
-Palavras mais relevantes: atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
-Árvore binária em ordem:
-
-
-----------------------------------------------------
-Arquivo: ./dataset/input/ti2.txt
-
-Quantidade de palavras analisadas: 3
-> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '200'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '199'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
-
-Palavras mais relevantes: melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
-
-Árvore binária em ordem:
-
-
-----------------------------------------------------
-Arquivo: ./dataset/input/filosofia2.txt
-
-Quantidade de palavras analisadas: 4
-> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '20'
-
-Palavras mais relevantes: condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
-
-Árvore binária em ordem:
-
-
-----------------------------------------------------
-Arquivo: ./dataset/input/globalizacao.txt
-
-Quantidade de palavras analisadas: 2
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
-
-Palavras mais relevantes: É (134), necessidade (134), importância (134), sentido (200), processo (200), 
-
-Árvore binária em ordem:
-
-
-----------------------------------------------------
-Arquivo: ./dataset/input/ti.txt
-
-Quantidade de palavras analisadas: 3
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '200'
-> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '199'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
-
-Palavras mais relevantes: ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
-
-Árvore binária em ordem:
-
-
-----------------------------------------------------
-Arquivo: ./dataset/input/filosofia.txt
-
-Quantidade de palavras analisadas: 4
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
-> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
-
-Palavras mais relevantes: modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
-
-Árvore binária em ordem:
-
+modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/politica.txt
@@ -145,66 +68,5 @@ Quantidade de palavras analisadas: 2
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
 
 Palavras mais relevantes: atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
-
 Árvore binária em ordem:
-
-
-----------------------------------------------------
-Arquivo: ./dataset/input/ti2.txt
-
-Quantidade de palavras analisadas: 3
-> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '200'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '199'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
-
-Palavras mais relevantes: melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/filosofia2.txt
-
-Quantidade de palavras analisadas: 4
-> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '20'
-
-Palavras mais relevantes: condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/globalizacao.txt
-
-Quantidade de palavras analisadas: 2
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
-
-Palavras mais relevantes: É (134), necessidade (134), importância (134), sentido (200), processo (200), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/ti.txt
-
-Quantidade de palavras analisadas: 3
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '200'
-> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '199'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
-
-Palavras mais relevantes: ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/filosofia.txt
-
-Quantidade de palavras analisadas: 4
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
-> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
-
-Palavras mais relevantes: modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/politica.txt
-
-Quantidade de palavras analisadas: 2
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
-
-Palavras mais relevantes: atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
+atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
