@@ -1,7 +1,7 @@
 #include "include/util.hpp"
 #include "include/file.hpp"
 #include "include/heap.hpp"
-#include "include/tree.hpp"
+#include "include/binarytree.hpp"
 #define k 5
 
 int main() {
@@ -32,6 +32,9 @@ int main() {
         priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap = processHash(frequencyMap, k, filePath);
         printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
         vector<pair<string, int>> topKWords = printMinHeap(filePath, minHeap, outFile, wordsToSearch, frequencyMap, k);
+        BinaryTree binaryTree;
+        fillBinaryTree(binaryTree, topKWords);
+        printBinaryTreeInOrder(binaryTree);
         inputFile.close();
     }
 

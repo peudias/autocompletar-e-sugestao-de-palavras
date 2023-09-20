@@ -1,5 +1,5 @@
 #include "include/heap.hpp"
-#include "include/tree.hpp"
+#include "include/binarytree.hpp"
 
 void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, const HeapNode &node, int k){
     if(minHeap.size() < k){

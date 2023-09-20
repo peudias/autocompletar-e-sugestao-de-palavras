@@ -16,6 +16,8 @@
 #include <functional>
 #include <cctype>
 
+#include <utility>
+
 #define AMARELO "\x1b[33m"
 #define MAGENTA "\x1b[38;5;200m"
 #define VERMELHO "\x1b[38;5;196m"
