@@ -10,11 +10,13 @@ void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparato
     }
 }
 
-void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, ostream &outputStream, const unordered_map<string, int> &wordToCheck, const unordered_map<string, int> &frequencyMap, int k) {
+vector<pair<string, int>> printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, ostream &outputStream, const unordered_map<string, int> &wordToCheck, const unordered_map<string, int> &frequencyMap, int k) {
     outputStream << endl << "Palavras mais relevantes: ";
 
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeapCopy = minHeap;
     bool found = false;
+
+    vector<pair<string, int>> topKWords;
 
     if(!found){
         vector<pair<string, int>> newWords;
@@ -42,14 +44,18 @@ void printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNo
 
         minHeap = newHeap;
 
+
         while(!newHeap.empty()){
             HeapNode newNode = newHeap.top();
             newHeap.pop();
             outputStream << newNode.word << " (" << newNode.count << "), ";
+            topKWords.emplace_back(newNode.word, newNode.count);
         }
     }
 
     outputStream << endl;
+
+    return topKWords;
 }
 
 priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> processHash(const unordered_map<string, int> &frequencyMap, int k, const string &fileName){

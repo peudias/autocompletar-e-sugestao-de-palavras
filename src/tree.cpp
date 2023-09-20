@@ -20,26 +20,3 @@ void printInOrder(TreeNode* root) {
         printInOrder(root->right);
     }
 }
-
-void printInOrder2(TreeNode* root) {
-    if (root) {
-        cout << "Nó: " << root->word << " ";
-        
-        if (root->left) {
-            cout << "FE: " << root->left->word << " ";
-        } else {
-            cout << "FE: Nenhum ";
-        }
-
-        if (root->right) {
-            cout << "FD: " << root->right->word << " ";
-        } else {
-            cout << "FD: Nenhum ";
-        }
-
-        cout << endl;
-
-        printInOrder2(root->left);
-        printInOrder2(root->right);
-    }
-}

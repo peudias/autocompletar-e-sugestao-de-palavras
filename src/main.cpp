@@ -31,7 +31,7 @@ int main() {
         processText(inputFile, frequencyMap, stopwords);
         priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap = processHash(frequencyMap, k, filePath);
         printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
-        printMinHeap(filePath, minHeap, outFile, wordsToSearch, frequencyMap, k);
+        vector<pair<string, int>> topKWords = printMinHeap(filePath, minHeap, outFile, wordsToSearch, frequencyMap, k);
         inputFile.close();
     }
 
