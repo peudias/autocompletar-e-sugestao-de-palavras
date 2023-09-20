@@ -34,8 +34,8 @@ int main() {
         vector<pair<string, int>> topKWords = printMinHeap(filePath, minHeap, outFile, wordsToSearch, frequencyMap, k);
         BinaryTree binaryTree;
         fillBinaryTree(binaryTree, topKWords);
-        std::string outputFileName = "./dataset/outputs/output.data";
-        printBinaryTreeInOrder(binaryTree);
+        string outputFileName = "./dataset/outputs/output.data";
+        // printBinaryTreeInOrder(binaryTree);
         printBinaryTreeInOrderToFile(binaryTree, outputFileName);
         inputFile.close();
     }
