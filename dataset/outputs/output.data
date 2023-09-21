@@ -7,7 +7,11 @@ Quantidade de palavras analisadas: 3
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '199'
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
 
-Palavras mais relevantes: melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
+
 Árvore binária em ordem:
 melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
 
@@ -20,7 +24,11 @@ Quantidade de palavras analisadas: 4
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '20'
 
-Palavras mais relevantes: condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
+
 Árvore binária em ordem:
 condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
 
@@ -31,7 +39,11 @@ Quantidade de palavras analisadas: 2
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
 
-Palavras mais relevantes: É (134), necessidade (134), importância (134), sentido (200), processo (200), 
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+É (134), necessidade (134), importância (134), sentido (200), processo (200), 
+
 Árvore binária em ordem:
 É (134), necessidade (134), importância (134), sentido (200), processo (200), 
 
@@ -43,7 +55,11 @@ Quantidade de palavras analisadas: 3
 > Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '199'
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
 
-Palavras mais relevantes: ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
+
 Árvore binária em ordem:
 ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
 
@@ -56,7 +72,11 @@ Quantidade de palavras analisadas: 4
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '19'
 > Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
 
-Palavras mais relevantes: modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
+
 Árvore binária em ordem:
 modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
 
@@ -67,6 +87,10 @@ Quantidade de palavras analisadas: 2
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
 
-Palavras mais relevantes: atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
+
 Árvore binária em ordem:
 atual (201), saúde (201), melhoria (201), políticas (267), político (400), 

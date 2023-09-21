@@ -11,7 +11,8 @@ void insertToMinHeap(priority_queue<HeapNode, vector<HeapNode>, MinHeapComparato
 }
 
 vector<pair<string, int>> printMinHeap(const string &fileName, priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> &minHeap, ostream &outputStream, const unordered_map<string, int> &wordToCheck, const unordered_map<string, int> &frequencyMap, int k) {
-    outputStream << endl << "Palavras mais relevantes: ";
+    outputStream << endl << "Palavras mais relevantes: " << endl;
+    outputStream << endl << "Top-K-Elementos: " << endl;
 
     priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeapCopy = minHeap;
     bool found = false;

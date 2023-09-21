@@ -97,7 +97,7 @@ void printBinaryTreeInOrderToFile(const BinaryTree& binaryTree, const string& fi
         return;
     }
 
-    outputFile << "Árvore binária em ordem:" << endl;
+    outputFile << endl << "Árvore binária em ordem:" << endl;
     binaryTree.printInOrderToFile(outputFile); // Direciona a saída para o arquivo
     outputFile << endl;
 
