@@ -2,7 +2,6 @@
 
 AVLTree::AVLTree() : root(nullptr) {}
 
-// avlNode::avlNode(const string& w, int c) : word(w), count(c), left(nullptr), right(nullptr), height(1) {}
 avlNode::avlNode(const pair<string, int>& item) : data(item), left(nullptr), right(nullptr), height(1) {}
 
 int AVLTree::getHeight(avlNode* node) {
@@ -46,7 +45,6 @@ avlNode* AVLTree::rotateLeft(avlNode* x) {
     return y;
 }
 
-// avlNode* AVLTree::insert(avlNode* node, const string& word, int count) {
 avlNode* AVLTree::insert(avlNode* node, const pair<string, int>& data) {
     if (node == nullptr)
         return new avlNode(data);
@@ -56,13 +54,12 @@ avlNode* AVLTree::insert(avlNode* node, const pair<string, int>& data) {
     else if (data > node->data)
         node->right = insert(node->right, data);
     else
-        return node; // Duplicates not allowed
+        return node;
 
     updateHeight(node);
 
     int balance = getBalanceFactor(node);
 
-    // Left Heavy
     if (balance > 1) {
         if (data < node->left->data)
             return rotateRight(node);
@@ -72,7 +69,6 @@ avlNode* AVLTree::insert(avlNode* node, const pair<string, int>& data) {
         }
     }
 
-    // Right Heavy
     if (balance < -1) {
         if (data > node->right->data)
             return rotateLeft(node);
@@ -85,7 +81,6 @@ avlNode* AVLTree::insert(avlNode* node, const pair<string, int>& data) {
     return node;
 }
 
-// void AVLTree::insert(const string& word, int count) {
 void AVLTree::insert(const pair<string, int>& data) {
     root = insert(root, data);
 }
@@ -96,7 +91,6 @@ void fillAvlTree(AVLTree &tree, const vector<pair<string, int>> &topKWords) {
     }
 }
 
-// Função auxiliar recursiva para imprimir a árvore AVL em ordem in-order
 void printInOrder(avlNode* node) {
     if (node == nullptr) {
         return;
@@ -107,9 +101,8 @@ void printInOrder(avlNode* node) {
     printInOrder(node->right);
 }
 
-// Função pública para imprimir a árvore AVL em ordem in-order
 void printAvlTreeInOrder(AVLTree &tree) {
-    printInOrder(tree.getRoot()); // Use getRoot para acessar a raiz da árvore
+    printInOrder(tree.getRoot());
 }
 
 avlNode* AVLTree::getRoot() {
