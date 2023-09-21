@@ -3,16 +3,12 @@
 #include "util.hpp"
 
 struct avlNode {
-    // string word;
-    // int count;
     pair<string, int> data;
     avlNode* left;
     avlNode* right;
     int height;
 
-    // avlNode(const string& w, int c);
-    avlNode(const pair<string, int>& item);
-    //  : data(item), left(nullptr), right(nullptr) {}
+    avlNode(const pair<string, int>& item) : data(item), left(nullptr), right(nullptr), height(1) {}
 };
 
 class AVLTree {
@@ -31,8 +27,12 @@ private:
     avlNode* insert(avlNode* node, const pair<string, int>& item);
 };
 
-void fillAvlTree(AVLTree &tree, const vector<pair<string, int>> &topKWords);
+void fillAvlTree(AVLTree &avlTree, const vector<pair<string, int>> &topKWords);
+void printAvlTreeInOrderToFile(const AVLTree& avlTree, const string& fileName);
+
+
+
 void printInOrder(avlNode* node);
-void printAvlTreeInOrder(AVLTree &tree);
+void printAvlTreeInOrder(AVLTree &avlTree);
 
 #endif

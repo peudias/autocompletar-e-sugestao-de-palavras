@@ -2,8 +2,6 @@
 
 AVLTree::AVLTree() : root(nullptr) {}
 
-avlNode::avlNode(const pair<string, int>& item) : data(item), left(nullptr), right(nullptr), height(1) {}
-
 int AVLTree::getHeight(avlNode* node) {
     if (node == nullptr) return 0;
     return node->height;
@@ -85,9 +83,9 @@ void AVLTree::insert(const pair<string, int>& data) {
     root = insert(root, data);
 }
 
-void fillAvlTree(AVLTree &tree, const vector<pair<string, int>> &topKWords) {
+void fillAvlTree(AVLTree &avlTree, const vector<pair<string, int>> &topKWords) {
     for (const auto& wordCount : topKWords) {
-        tree.insert(wordCount);
+        avlTree.insert(wordCount);
     }
 }
 
@@ -101,8 +99,8 @@ void printInOrder(avlNode* node) {
     printInOrder(node->right);
 }
 
-void printAvlTreeInOrder(AVLTree &tree) {
-    printInOrder(tree.getRoot());
+void printAvlTreeInOrder(AVLTree &avlTree) {
+    printInOrder(avlTree.getRoot());
 }
 
 avlNode* AVLTree::getRoot() {
