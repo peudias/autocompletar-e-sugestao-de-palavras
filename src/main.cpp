@@ -43,9 +43,9 @@ int main() {
         fillBinaryTree(binaryTree, topKWords);
         printBinaryTreeInOrderToFile(binaryTree, outputFileName);
 
-        AVLTree avlTreeInstance;
-        fillAvlTree(avlTreeInstance, topKWords);
-        printAvlTreeInOrder(avlTreeInstance);
+        AVLTree avlTree;
+        fillAvlTree(avlTree, topKWords);
+        printAvlTreeInOrder(avlTree);
 
         inputFile.close();
     }
