@@ -83,25 +83,6 @@ avlNode* AVLTree::insert(avlNode* node, const pair<string, int>& data) {
     return node;
 }
 
-// void printInOrder(avlNode* node) {
-//     if (node == nullptr) {
-//         return;
-//     }
-    
-//     printInOrder(node->left);
-//     cout << node->data.first << " (" << node->data.second << ")" << endl;
-//     printInOrder(node->right);
-// }
-
-
-// avlNode* AVLTree::getRoot() {
-//     return root;
-// }
-
-// void printAvlTreeInOrder(AVLTree &avlTree) {
-//     printInOrder(avlTree.getRoot());
-// }
-
 void AVLTree::printInOrderToFile(ofstream& outputFile) const {
     printInOrderToFile(root, outputFile);
 }
