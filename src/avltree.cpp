@@ -106,3 +106,32 @@ void printAvlTreeInOrder(AVLTree &avlTree) {
 avlNode* AVLTree::getRoot() {
     return root;
 }
+
+void printAvlTreeInOrderToFile(const AVLTree& avlTree, const string& fileName) {
+    ofstream outputFile(fileName, ios::app);
+
+    if (!outputFile.is_open()) {
+        cout << "Erro ao abrir o arquivo de saída." << endl;
+        return;
+    }
+
+    outputFile << endl << "Árvore AVL em ordem:" << endl;
+    avlTree.printInOrderToFile(outputFile);
+    outputFile << endl;
+
+    outputFile.close();
+}
+
+void AVLTree::printInOrderToFile(ofstream& outputFile) const {
+    printInOrderToFile(root, outputFile);
+}
+
+void AVLTree::printInOrderToFile(avlNode* root, ofstream& outputFile) const {
+    if (root == nullptr) {
+        return;
+    }
+
+    printInOrderToFile(root->left, outputFile);
+    outputFile << root->data.first << " (" << root->data.second << "), ";
+    printInOrderToFile(root->right, outputFile);
+}

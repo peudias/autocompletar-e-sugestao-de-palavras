@@ -46,6 +46,7 @@ int main() {
         AVLTree avlTree;
         fillAvlTree(avlTree, topKWords);
         printAvlTreeInOrder(avlTree);
+        printAvlTreeInOrderToFile(avlTree, outputFileName);
 
         inputFile.close();
     }

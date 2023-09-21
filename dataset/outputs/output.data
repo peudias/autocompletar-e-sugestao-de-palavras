@@ -15,101 +15,8 @@ melhor (201), dados (201), implantação (267), segurança (268), utilização (
 Árvore binária em ordem:
 melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
 
-----------------------------------------------------
-Arquivo: ./dataset/input/filosofia2.txt
-
-Quantidade de palavras analisadas: 4
-> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '20'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
-
-Árvore binária em ordem:
-condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/globalizacao.txt
-
-Quantidade de palavras analisadas: 2
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-É (134), necessidade (134), importância (134), sentido (200), processo (200), 
-
-Árvore binária em ordem:
-É (134), necessidade (134), importância (134), sentido (200), processo (200), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/ti.txt
-
-Quantidade de palavras analisadas: 3
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '200'
-> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '199'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
-
-Árvore binária em ordem:
-ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/filosofia.txt
-
-Quantidade de palavras analisadas: 4
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
-> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
-
-Árvore binária em ordem:
-modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/politica.txt
-
-Quantidade de palavras analisadas: 2
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
-
-Árvore binária em ordem:
-atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/ti2.txt
-
-Quantidade de palavras analisadas: 3
-> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '200'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '199'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
-
-Árvore binária em ordem:
-melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
+Árvore AVL em ordem:
+dados (201), implantação (267), melhor (201), segurança (268), utilização (400), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/filosofia2.txt
@@ -128,6 +35,9 @@ condição (133), priori (144), mundo (144), sujeito (149), teoria (192),
 Árvore binária em ordem:
 condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
 
+Árvore AVL em ordem:
+condição (133), mundo (144), priori (144), sujeito (149), teoria (192), 
+
 ----------------------------------------------------
 Arquivo: ./dataset/input/globalizacao.txt
 
@@ -142,6 +52,9 @@ Top-K-Elementos:
 
 Árvore binária em ordem:
 É (134), necessidade (134), importância (134), sentido (200), processo (200), 
+
+Árvore AVL em ordem:
+importância (134), necessidade (134), processo (200), sentido (200), É (134), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/ti.txt
@@ -158,6 +71,9 @@ ti (201), informações (201), implantação (266), segurança (268), utilizaç�
 
 Árvore binária em ordem:
 ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
+
+Árvore AVL em ordem:
+implantação (266), informações (201), segurança (268), ti (201), utilização (399), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/filosofia.txt
@@ -176,101 +92,8 @@ modo (129), mundo (134), condição (134), sujeito (145), teoria (176),
 Árvore binária em ordem:
 modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
 
-----------------------------------------------------
-Arquivo: ./dataset/input/politica.txt
-
-Quantidade de palavras analisadas: 2
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
-
-Árvore binária em ordem:
-atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/ti2.txt
-
-Quantidade de palavras analisadas: 3
-> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '200'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '199'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
-
-Árvore binária em ordem:
-melhor (201), dados (201), implantação (267), segurança (268), utilização (400), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/filosofia2.txt
-
-Quantidade de palavras analisadas: 4
-> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '20'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
-
-Árvore binária em ordem:
-condição (133), priori (144), mundo (144), sujeito (149), teoria (192), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/globalizacao.txt
-
-Quantidade de palavras analisadas: 2
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-É (134), necessidade (134), importância (134), sentido (200), processo (200), 
-
-Árvore binária em ordem:
-É (134), necessidade (134), importância (134), sentido (200), processo (200), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/ti.txt
-
-Quantidade de palavras analisadas: 3
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '200'
-> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '199'
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
-
-Árvore binária em ordem:
-ti (201), informações (201), implantação (266), segurança (268), utilização (399), 
-
-----------------------------------------------------
-Arquivo: ./dataset/input/filosofia.txt
-
-Quantidade de palavras analisadas: 4
-> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
-> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '19'
-> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
-
-Palavras mais relevantes: 
-
-Top-K-Elementos: 
-modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
-
-Árvore binária em ordem:
-modo (129), mundo (134), condição (134), sujeito (145), teoria (176), 
+Árvore AVL em ordem:
+condição (134), modo (129), mundo (134), sujeito (145), teoria (176), 
 
 ----------------------------------------------------
 Arquivo: ./dataset/input/politica.txt
@@ -286,3 +109,6 @@ atual (201), saúde (201), melhoria (201), políticas (267), político (400),
 
 Árvore binária em ordem:
 atual (201), saúde (201), melhoria (201), políticas (267), político (400), 
+
+Árvore AVL em ordem:
+atual (201), melhoria (201), políticas (267), político (400), saúde (201), 

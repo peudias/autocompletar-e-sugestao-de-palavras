@@ -58,7 +58,7 @@ void printBinaryTreeInOrderToFile(const BinaryTree& binaryTree, const string& fi
     ofstream outputFile(fileName, ios::app);
 
     if (!outputFile.is_open()) {
-        cerr << "Erro ao abrir o arquivo de saída." << endl;
+        cout << "Erro ao abrir o arquivo de saída." << endl;
         return;
     }
 
