@@ -47,7 +47,6 @@ void BinaryTree::printInOrderToFile(binaryNode* root, ofstream& outputFile) cons
     printInOrderToFile(root->right, outputFile);
 }
 
-
 void fillBinaryTree(BinaryTree& binaryTree, const vector<pair<string, int>>& topKWords) {
     for (const auto& wordPair : topKWords) {
         binaryTree.insert(wordPair);

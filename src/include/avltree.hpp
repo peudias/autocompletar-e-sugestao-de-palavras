@@ -32,9 +32,4 @@ private:
 void fillAvlTree(AVLTree &avlTree, const vector<pair<string, int>> &topKWords);
 void printAvlTreeInOrderToFile(const AVLTree& avlTree, const string& fileName);
 
-
-
-void printInOrder(avlNode* node);
-void printAvlTreeInOrder(AVLTree &avlTree);
-
 #endif

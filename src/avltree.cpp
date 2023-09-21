@@ -43,6 +43,10 @@ avlNode* AVLTree::rotateLeft(avlNode* x) {
     return y;
 }
 
+void AVLTree::insert(const pair<string, int>& data) {
+    root = insert(root, data);
+}
+
 avlNode* AVLTree::insert(avlNode* node, const pair<string, int>& data) {
     if (node == nullptr)
         return new avlNode(data);
@@ -79,32 +83,43 @@ avlNode* AVLTree::insert(avlNode* node, const pair<string, int>& data) {
     return node;
 }
 
-void AVLTree::insert(const pair<string, int>& data) {
-    root = insert(root, data);
+// void printInOrder(avlNode* node) {
+//     if (node == nullptr) {
+//         return;
+//     }
+    
+//     printInOrder(node->left);
+//     cout << node->data.first << " (" << node->data.second << ")" << endl;
+//     printInOrder(node->right);
+// }
+
+
+// avlNode* AVLTree::getRoot() {
+//     return root;
+// }
+
+// void printAvlTreeInOrder(AVLTree &avlTree) {
+//     printInOrder(avlTree.getRoot());
+// }
+
+void AVLTree::printInOrderToFile(ofstream& outputFile) const {
+    printInOrderToFile(root, outputFile);
+}
+
+void AVLTree::printInOrderToFile(avlNode* root, ofstream& outputFile) const {
+    if (root == nullptr) {
+        return;
+    }
+
+    printInOrderToFile(root->left, outputFile);
+    outputFile << root->data.first << " (" << root->data.second << "), ";
+    printInOrderToFile(root->right, outputFile);
 }
 
 void fillAvlTree(AVLTree &avlTree, const vector<pair<string, int>> &topKWords) {
     for (const auto& wordCount : topKWords) {
         avlTree.insert(wordCount);
     }
-}
-
-void printInOrder(avlNode* node) {
-    if (node == nullptr) {
-        return;
-    }
-    
-    printInOrder(node->left);
-    cout << node->data.first << " (" << node->data.second << ")" << endl;
-    printInOrder(node->right);
-}
-
-void printAvlTreeInOrder(AVLTree &avlTree) {
-    printInOrder(avlTree.getRoot());
-}
-
-avlNode* AVLTree::getRoot() {
-    return root;
 }
 
 void printAvlTreeInOrderToFile(const AVLTree& avlTree, const string& fileName) {
@@ -120,18 +135,4 @@ void printAvlTreeInOrderToFile(const AVLTree& avlTree, const string& fileName) {
     outputFile << endl;
 
     outputFile.close();
-}
-
-void AVLTree::printInOrderToFile(ofstream& outputFile) const {
-    printInOrderToFile(root, outputFile);
-}
-
-void AVLTree::printInOrderToFile(avlNode* root, ofstream& outputFile) const {
-    if (root == nullptr) {
-        return;
-    }
-
-    printInOrderToFile(root->left, outputFile);
-    outputFile << root->data.first << " (" << root->data.second << "), ";
-    printInOrderToFile(root->right, outputFile);
 }
