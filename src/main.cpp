@@ -2,6 +2,7 @@
 #include "include/file.hpp"
 #include "include/heap.hpp"
 #include "include/binarytree.hpp"
+#include "include/avltree.hpp"
 #define k 5
 
 int main() {
@@ -37,6 +38,10 @@ int main() {
         string outputFileName = "./dataset/outputs/output.data";
         // printBinaryTreeInOrder(binaryTree);
         printBinaryTreeInOrderToFile(binaryTree, outputFileName);
+        avltree avlTreeInstance;
+        // Insira os elementos de topKWords na árvore AVL
+        fillAvlTree(avlTreeInstance, topKWords);
+        printAvlTreeInOrder(avlTreeInstance);
         inputFile.close();
     }
 
