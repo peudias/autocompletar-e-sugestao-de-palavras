@@ -1,28 +1,28 @@
 #include "include/avltree.hpp"
 
 
-Node::Node(const std::string& w, int c) : word(w), count(c), left(nullptr), right(nullptr), height(1) {}
+avlNode::avlNode(const std::string& w, int c) : word(w), count(c), left(nullptr), right(nullptr), height(1) {}
 
-avltree::avltree() : root(nullptr) {}
+AVLTree::AVLTree() : root(nullptr) {}
 
-int avltree::getHeight(Node* node) {
+int AVLTree::getHeight(avlNode* node) {
     if (node == nullptr) return 0;
     return node->height;
 }
 
-int avltree::getBalanceFactor(Node* node) {
+int AVLTree::getBalanceFactor(avlNode* node) {
     if (node == nullptr) return 0;
     return getHeight(node->left) - getHeight(node->right);
 }
 
-void avltree::updateHeight(Node* node) {
+void AVLTree::updateHeight(avlNode* node) {
     if (node != nullptr)
         node->height = 1 + std::max(getHeight(node->left), getHeight(node->right));
 }
 
-Node* avltree::rotateRight(Node* y) {
-    Node* x = y->left;
-    Node* T2 = x->right;
+avlNode* AVLTree::rotateRight(avlNode* y) {
+    avlNode* x = y->left;
+    avlNode* T2 = x->right;
 
     x->right = y;
     y->left = T2;
@@ -33,9 +33,9 @@ Node* avltree::rotateRight(Node* y) {
     return x;
 }
 
-Node* avltree::rotateLeft(Node* x) {
-    Node* y = x->right;
-    Node* T2 = y->left;
+avlNode* AVLTree::rotateLeft(avlNode* x) {
+    avlNode* y = x->right;
+    avlNode* T2 = y->left;
 
     y->left = x;
     x->right = T2;
@@ -46,9 +46,9 @@ Node* avltree::rotateLeft(Node* x) {
     return y;
 }
 
-Node* avltree::insert(Node* node, const std::string& word, int count) {
+avlNode* AVLTree::insert(avlNode* node, const std::string& word, int count) {
     if (node == nullptr)
-        return new Node(word, count);
+        return new avlNode(word, count);
 
     if (word < node->word)
         node->left = insert(node->left, word, count);
@@ -84,18 +84,18 @@ Node* avltree::insert(Node* node, const std::string& word, int count) {
     return node;
 }
 
-void avltree::insert(const std::string& word, int count) {
+void AVLTree::insert(const std::string& word, int count) {
     root = insert(root, word, count);
 }
 
-void fillAvlTree(avltree &tree, const vector<pair<string, int>> &topKWords) {
+void fillAvlTree(AVLTree &tree, const vector<pair<string, int>> &topKWords) {
     for (const auto& wordCount : topKWords) {
         tree.insert(wordCount.first, wordCount.second);
     }
 }
 
 // Função auxiliar recursiva para imprimir a árvore AVL em ordem in-order
-void printInOrder(Node* node) {
+void printInOrder(avlNode* node) {
     if (node == nullptr) {
         return;
     }
@@ -106,11 +106,11 @@ void printInOrder(Node* node) {
 }
 
 // Função pública para imprimir a árvore AVL em ordem in-order
-void printAvlTreeInOrder(avltree &tree) {
+void printAvlTreeInOrder(AVLTree &tree) {
     printInOrder(tree.getRoot()); // Use getRoot para acessar a raiz da árvore
 }
 
 
-Node* avltree::getRoot() {
+avlNode* AVLTree::getRoot() {
     return root;
 }

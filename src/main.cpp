@@ -28,20 +28,25 @@ int main() {
         ifstream inputFile;
         unordered_map<string, int> frequencyMap;
         unordered_set<string> stopwords = readStopwords("./dataset/stopwords/stopwords.txt");
+        string outputFileName = "./dataset/outputs/output.data";
+        
         openTextFile(filePath, inputFile);
         processText(inputFile, frequencyMap, stopwords);
         priority_queue<HeapNode, vector<HeapNode>, MinHeapComparator> minHeap = processHash(frequencyMap, k, filePath);
+        
         printWordFrequency(frequencyMap, wordsToSearch, filePath, outFile);
+
         vector<pair<string, int>> topKWords = printMinHeap(filePath, minHeap, outFile, wordsToSearch, frequencyMap, k);
+        
+
         BinaryTree binaryTree;
         fillBinaryTree(binaryTree, topKWords);
-        string outputFileName = "./dataset/outputs/output.data";
-        // printBinaryTreeInOrder(binaryTree);
         printBinaryTreeInOrderToFile(binaryTree, outputFileName);
-        avltree avlTreeInstance;
-        // Insira os elementos de topKWords na árvore AVL
+
+        AVLTree avlTreeInstance;
         fillAvlTree(avlTreeInstance, topKWords);
         printAvlTreeInOrder(avlTreeInstance);
+
         inputFile.close();
     }
 

@@ -2,37 +2,37 @@
 #define AVLTREE_HPP
 #include "util.hpp"
 
-struct Node {
+struct avlNode {
     std::string word;
     int count;
-    Node* left;
-    Node* right;
+    avlNode* left;
+    avlNode* right;
     int height;
 
-    Node(const std::string& w, int c);
+    avlNode(const std::string& w, int c);
 };
 
-class avltree {
+class AVLTree {
 private:
-    Node* root;
+    avlNode* root;
 
-    int getHeight(Node* node);
-    int getBalanceFactor(Node* node);
-    void updateHeight(Node* node);
-    Node* rotateRight(Node* y);
-    Node* rotateLeft(Node* x);
-    Node* insert(Node* node, const std::string& word, int count);
+    int getHeight(avlNode* node);
+    int getBalanceFactor(avlNode* node);
+    void updateHeight(avlNode* node);
+    avlNode* rotateRight(avlNode* y);
+    avlNode* rotateLeft(avlNode* x);
+    avlNode* insert(avlNode* node, const std::string& word, int count);
 
 public:
-    avltree();
+    AVLTree();
     void insert(const std::string& word, int count);
-    Node* getRoot(); // Adicione este método público
+    avlNode* getRoot(); // Adicione este método público
 };
 
 
 
 
-void fillAvlTree(avltree &tree, const vector<pair<string, int>> &topKWords);
-void printInOrder(Node* node);
-void printAvlTreeInOrder(avltree &tree);
+void fillAvlTree(AVLTree &tree, const vector<pair<string, int>> &topKWords);
+void printInOrder(avlNode* node);
+void printAvlTreeInOrder(AVLTree &tree);
 #endif

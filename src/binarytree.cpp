@@ -6,7 +6,7 @@ BinaryTree::~BinaryTree() {
     destroyTree(root);
 }
 
-void BinaryTree::destroyTree(TreeNode* node) {
+void BinaryTree::destroyTree(binaryNode* node) {
     if (node == nullptr) {
         return;
     }
@@ -19,9 +19,9 @@ void BinaryTree::insert(const pair<string, int>& item) {
     root = insert(root, item);
 }
 
-TreeNode* BinaryTree::insert(TreeNode* root, const pair<string, int>& item) {
+binaryNode* BinaryTree::insert(binaryNode* root, const pair<string, int>& item) {
     if (root == nullptr) {
-        return new TreeNode(item);
+        return new binaryNode(item);
     }
 
     if (item.second < root->data.second) {
@@ -33,25 +33,11 @@ TreeNode* BinaryTree::insert(TreeNode* root, const pair<string, int>& item) {
     return root;
 }
 
-// void BinaryTree::printInOrder() const {
-//     printInOrder(root);
-// }
-
-// void BinaryTree::printInOrder(TreeNode* root) const {
-//     if (root == nullptr) {
-//         return;
-//     }
-
-//     printInOrder(root->left);
-//     cout << root->data.first << " (" << root->data.second << "), ";
-//     printInOrder(root->right);
-// }
-
 void BinaryTree::printInOrderToFile(ofstream& outputFile) const {
     printInOrderToFile(root, outputFile);
 }
 
-void BinaryTree::printInOrderToFile(TreeNode* root, ofstream& outputFile) const {
+void BinaryTree::printInOrderToFile(binaryNode* root, ofstream& outputFile) const {
     if (root == nullptr) {
         return;
     }
@@ -68,29 +54,8 @@ void fillBinaryTree(BinaryTree& binaryTree, const vector<pair<string, int>>& top
     }
 }
 
-// void printBinaryTreeInOrder(const BinaryTree& binaryTree) {
-//     cout << "Árvore binária em ordem:" << endl;
-//     binaryTree.printInOrder();
-//     cout << endl;
-// }
-
-// void printBinaryTreeInOrderToFile(const BinaryTree& binaryTree, const string& fileName) {
-//     ofstream outputFile(fileName); // Cria um objeto ofstream para o arquivo
-
-//     if (!outputFile.is_open()) {
-//         cerr << "Erro ao abrir o arquivo de saída." << endl;
-//         return;
-//     }
-
-//     outputFile << "Árvore binária em ordem:" << endl;
-//     binaryTree.printInOrder(outputFile); // Direciona a saída para o arquivo
-//     outputFile << endl;
-
-//     outputFile.close(); // Fecha o arquivo
-// }
-
 void printBinaryTreeInOrderToFile(const BinaryTree& binaryTree, const string& fileName) {
-    ofstream outputFile(fileName, ios::app); // Cria um objeto ofstream para o arquivo
+    ofstream outputFile(fileName, ios::app);
 
     if (!outputFile.is_open()) {
         cerr << "Erro ao abrir o arquivo de saída." << endl;
@@ -98,8 +63,8 @@ void printBinaryTreeInOrderToFile(const BinaryTree& binaryTree, const string& fi
     }
 
     outputFile << endl << "Árvore binária em ordem:" << endl;
-    binaryTree.printInOrderToFile(outputFile); // Direciona a saída para o arquivo
+    binaryTree.printInOrderToFile(outputFile);
     outputFile << endl;
 
-    outputFile.close(); // Fecha o arquivo
+    outputFile.close();
 }
