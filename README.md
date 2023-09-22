@@ -102,7 +102,7 @@ No arquivo disponibilizado pelo professor da disciplina, houveram algumas regras
 
 <div align="justify">
 
-[✔️] Os resultados da análise serão apresentados em um arquivo chamado [`output.data`](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/dataset/outputs/output.data). Esse arquivo conterá as relações entre as palavras pesquisadas e cada arquivo de texto. Além disso, a relevância de cada palavra será calculada com base em sua frequência nos textos. Para tal, utilize o trabalho recentemente realizado, o [Top-K-Elementos](github.com/phpdias/top-k-elementos).
+[✔️] Os resultados da análise serão apresentados em um arquivo chamado [`output.data`](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/dataset/outputs/output.data). Esse arquivo conterá as relações entre as palavras pesquisadas e cada arquivo de texto. Além disso, a relevância de cada palavra será calculada com base em sua frequência nos textos. Para tal, foi utilizado o trabalho recentemente realizado, o [Top-K-Elementos](https://github.com/phpdias/top-k-elementos).
 
 </div>
 
