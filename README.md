@@ -103,7 +103,7 @@ A abordagem consistirá em três etapas diferentes:
 
 </div>
 
-1. **Etapa 1: Árvore Binária Padrão**
+- **Etapa 1: Árvore Binária Padrão**
 
 <div align="justify">
 
@@ -113,7 +113,7 @@ pesquisa.
 
 </div>
 
-2. **Etapa 2: Codificação de Huffman**
+- **Etapa 2: Codificação de Huffman**
 
 <div align="justify">
 
@@ -124,7 +124,7 @@ vantagens em relação à anterior.
 
 </div>
 
-3. **Etapa 3: Árvore AVL**
+- **Etapa 3: Árvore AVL**
 
 <div align="justify">
 
