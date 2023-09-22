@@ -11,15 +11,15 @@
 
 <!--=====================================================================================================================
 ## Questionário: ✅?
-1. O código pode ser baixado do git?
-4. O código está bem estruturado e organizado?
-5. O código bem como a entrada seguem os padrões de pasta e nomes definidos?
+1. O código pode ser baixado do git? ✅
+4. O código está bem estruturado e organizado? ✅
+5. O código bem como a entrada seguem os padrões de pasta e nomes definidos? ✅
 ............................................................................
 6. A documentação apresenta uma discussão sobre o problema?
 7. A documentação apresenta como foi pensado a resolução do problema?
 8. A documentação apresenta pequenos exemplos para explicar o funcionamento?
 9. A documentação apresenta conclusões sobre o trabalho?
-10. A documentação detalha a forma como o código deve ser compilado?
+10. A documentação detalha a forma como o código deve ser compilado? ✅
 
 ## Documentação ✅?
 A documentação a ser produzida deve conter, pelo menos, as seguintes partes:
@@ -39,13 +39,24 @@ projeto e implementação.
 Nesse último ponto, tente realizar um paralelo com outras estruturas para demonstrar de fato que as estruturas
 adotadas são as melhores possíveis para o problema em questão.
 
+1. Apresentando o problema ✅
+2. Regras
+3. Implementação do problema
+4. Resolução do problema
+5. Experimentação
+6. Análise de Complexidade
+7. Conclusão
+8. Compilação e Execução ✅
+
+
+
 ==============================================================================================================================-->
 
 <!-- ## Wiki do Projeto 📚
 
 <div align="justify">
 
-Para obter informações mais detalhadas sobre o projeto, acesse a [**Wiki**](https://github.com/phpdias/tree/wiki).
+Para obter informações mais detalhadas sobre o projeto, acesse a [**Wiki**](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/wiki).
 
 Na Wiki, você terá acesso à documentação completa, instruções de execução e análise detalhada sobre as estruturas de dados, algoritmos utilizados e outros aspectos relevantes do projeto.
 
@@ -55,7 +66,7 @@ Na Wiki, você terá acesso à documentação completa, instruções de execuç�
 
 <div align="justify">
 
-Neste trabalho, o objetivo é criar um sistema que possibilite a funcionalidade de autocompletar e oferecer sugestões de palavras aos usuários. Para atingir essa finalidade, adotaremos a estrutura da árvore binária como base. A seguir, também serão apresentados outras estruturas, como a árvore AVL e Huffman.
+Neste trabalho, o objetivo é criar um sistema que possibilite a funcionalidade de autocompletar e oferecer sugestões de palavras aos usuários. Para atingir essa finalidade, adotaremos a estrutura da árvore binária como base. Além disso, exploraremos outras estruturas, incluindo as árvores AVL e Huffman.
 
 </div>
 
@@ -63,35 +74,35 @@ Neste trabalho, o objetivo é criar um sistema que possibilite a funcionalidade 
 
 No arquivo disponibilizado pelo professor da disciplina, houveram algumas regras explícitas para serem seguidas. Disponível a seguir:
 
-1. **Passo 1: Coleta de Dados**
+**1º Passo: Coleta de Dados**
 
 <div align="justify">
 
-Iniciamos solicitando ao usuário um arquivo denominado `input.data`, contendo uma lista de palavras. Cada palavra nesse arquivo será considerada como termo de pesquisa para o sistema.
+[✔️] Iniciamos solicitando ao usuário um arquivo denominado [`input.data`](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/dataset/wordToSearch/input.data), contendo uma lista de palavras. Cada palavra nesse arquivo será considerada como termo de pesquisa para o sistema.
 
 </div>
 
-2. **Passo 2: Modelo de Dados - Árvores Binárias**
+**2º Passo: Modelo de Dados - Árvores Binárias**
 
 <div align="justify">
 
-Utilizaremos um conjunto de árvores binárias para construir nosso sistema. Essas árvores serão criadas a partir de textos previamente fornecidos (disponíveis em textos.zip). O objetivo é estabelecer uma relação entre as palavras dos textos e as palavras de pesquisa.
+[✔️] Utilizaremos um conjunto de árvores binárias para construir nosso sistema. Essas árvores serão criadas a partir de [`textos previamente fornecidos`](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/tree/main/dataset/input). O objetivo é estabelecer uma relação entre as palavras dos textos e as palavras de pesquisa.
 
 </div>
 
-3. **Passo 3: Sugestões de Palavras Relevantes**
+**3º Passo: Sugestões de Palavras Relevantes**
 
 <div align="justify">
 
-Para cada palavra no arquivo input.data, percorreremos as árvores binárias para identificar as palavras mais relevantes e próximas à palavra de pesquisa. Priorizaremos palavras frequentes e associadas ao termo de pesquisa.
+[✔️] Para cada palavra no arquivo input.data, percorreremos as árvores binárias para identificar as palavras mais relevantes e próximas à palavra de pesquisa. Priorizaremos palavras frequentes e associadas ao termo de pesquisa.
 
 </div>
 
-4. **Passo 4: Resultados e Análises**
+**4º Passo: Resultados e Análises**
 
 <div align="justify">
 
-Os resultados da análise serão apresentados em um arquivo chamado output.data. Esse arquivo conterá as relações entre as palavras pesquisadas e cada arquivo de texto. Além disso, a relevância de cada palavra será calculada com base em sua frequência nos textos. Para tal, utilize o trabalho recentemente realizado, o contador de palavras.
+[✔️] Os resultados da análise serão apresentados em um arquivo chamado [`output.data`](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/dataset/outputs/output.data). Esse arquivo conterá as relações entre as palavras pesquisadas e cada arquivo de texto. Além disso, a relevância de cada palavra será calculada com base em sua frequência nos textos. Para tal, utilize o trabalho recentemente realizado, o [Top-K-Elementos](github.com/phpdias/top-k-elementos).
 
 </div>
 
@@ -107,9 +118,7 @@ A abordagem consistirá em três etapas diferentes:
 
 <div align="justify">
 
-Implementaremos uma árvore binária tradicional, selecio-
-nando as palavras mais relevantes e relacionadas à pesquisa em cada texto. A relevância de uma palavra será determinada por sua frequência e proximidade à palavra de
-pesquisa.
+Implementaremos uma árvore binária tradicional, selecionando as palavras mais relevantes e relacionadas à pesquisa em cada texto. A relevância de uma palavra será determinada por sua frequência e proximidade à palavra de pesquisa.
 
 </div>
 
@@ -117,10 +126,7 @@ pesquisa.
 
 <div align="justify">
 
-Exploraremos o uso do código de Huffman para otimizar
-a árvore binária padrão. Calcularemos códigos para cada palavra e reorganizaremos a
-estrutura da árvore com base nesses códigos. Avaliaremos se essa abordagem oferece
-vantagens em relação à anterior.
+Exploraremos o uso do código de Huffman para otimizar a árvore binária padrão. Calcularemos códigos para cada palavra e reorganizaremos a estrutura da árvore com base nesses códigos. Avaliaremos se essa abordagem oferece vantagens em relação à anterior.
 
 </div>
 
@@ -128,30 +134,29 @@ vantagens em relação à anterior.
 
 <div align="justify">
 
-Implementaremos uma árvore AVL e repetiremos o processo de análise.
-Compararemos o tempo médio de processamento entre a construção da estrutura e a
-geração de saída em comparação com as abordagens anteriores.
+Implementaremos uma árvore AVL e repetiremos o processo de análise. Compararemos o tempo médio de processamento entre a construção da estrutura e a geração de saída em comparação com as abordagens anteriores.
 
 </div>
 
 ## Resolução do problema ✅
 
-Ao concluir esta tarefa, teremos uma compreensão mais aprofundada das diferentes imple-
-mentações das árvores binárias e sua influência no sistema de autocompletar e sugestões de
-palavras. A análise comparativa nos permitirá avaliar a eficácia de cada abordagem em termos
-de desempenho e funcionalidade.
-
 Após a conclusão do projeto, temos aqui um algoritmo capaz de:
 
-- [✔️] Característica I;
-- [✔️] Característica II;
-- [✔️] Característica III;
-- [✔️] Característica IV;
-- [✔️] Característica V;
-
-Após a apresentação do tema, bem como a demonstração da lógica, serão apresentados todos os resultados obtidos a partir dos testes feitos.
+- [✔️] Ler uma quantidade não determinada de textos onde serão pesquisadas as palavras do usuário;
+- [✔️] Ler palavras de escolha do usuário para serem pesquisadas;
+- [✔️] Processar esses textos tratando letras maiúsculas, minúsculas, espaços e pontuações;
+- [✔️] Remoção de StopWords;
+- [✔️] Utilização da estrutura de dados Hash;
+- [✔️] Utilização da estrutura de dados MinHeap;
+- [✔️] Utilização da estrutura de dados Árvore Binária;
+- [✔️] Utilização da estrutura de dados Árvore AVL;
+- [✔️] Utilização da estrutura de dados Árvore Huffman;
+- [✔️] Demonstrar as **palavras mais relevantes** de um conjunto de dados utilizando cada uma das estruturas acima, identificando a palavra e a frequência da palavra para cada arquivo de texto disponível.
 
 ## Experimentação 🔬
+
+Ao concluir esta tarefa, teremos uma compreensão mais aprofundada das diferentes implementações das árvores binárias e sua influência no sistema de autocompletar e sugestões de
+palavras. A análise comparativa nos permitirá avaliar a eficácia de cada abordagem em termos de desempenho e funcionalidade.
 
 <div align="justify">
 	

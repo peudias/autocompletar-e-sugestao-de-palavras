@@ -2,6 +2,8 @@
 ----------------------------------------------------
 Arquivo: ./dataset/input/ti2.txt
 
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
 Quantidade de palavras analisadas: 3
 > Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '200'
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '199'
@@ -22,6 +24,8 @@ dados (201); implantação (267); melhor (201); segurança (268); utilização (
 implantação (267); segurança (268); utilização (400); melhor (201); dados (201); 
 ----------------------------------------------------
 Arquivo: ./dataset/input/filosofia2.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
 
 Quantidade de palavras analisadas: 4
 > Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
@@ -45,6 +49,8 @@ mundo (144); sujeito (149); teoria (192); condição (133); priori (144);
 ----------------------------------------------------
 Arquivo: ./dataset/input/globalizacao.txt
 
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
 Quantidade de palavras analisadas: 2
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
@@ -64,6 +70,8 @@ importância (134); necessidade (134); processo (200); sentido (200); É (134);
 importância (134); sentido (200); processo (200); É (134); necessidade (134); 
 ----------------------------------------------------
 Arquivo: ./dataset/input/ti.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
 
 Quantidade de palavras analisadas: 3
 > Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '200'
@@ -86,6 +94,8 @@ implantação (266); segurança (268); utilização (399); ti (201); informaçõ
 ----------------------------------------------------
 Arquivo: ./dataset/input/filosofia.txt
 
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
 Quantidade de palavras analisadas: 4
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
 > Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
@@ -107,6 +117,8 @@ condição (134); modo (129); mundo (134); sujeito (145); teoria (176);
 condição (134); sujeito (145); teoria (176); modo (129); mundo (134); 
 ----------------------------------------------------
 Arquivo: ./dataset/input/politica.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
 
 Quantidade de palavras analisadas: 2
 > Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'

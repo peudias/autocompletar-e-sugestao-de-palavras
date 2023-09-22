@@ -76,7 +76,8 @@ void printWordFrequency(const unordered_map<string, int> &frequencyMap, const un
     outputStream << endl << "----------------------------------------------------" << endl;
     outputStream << "Arquivo: " << filePath << endl << endl;
     int wordCount = countWords(frequencyMap, wordsToSearch);
-    outputStream << "Quantidade de palavras analisadas: " << wordCount << endl;
+    outputStream << "Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão." << endl;
+    outputStream << endl << "Quantidade de palavras analisadas: " << wordCount << endl;
     for(const auto &word : frequencyMap){
         if(wordsToSearch.find(word.first) != wordsToSearch.end()){
             outputStream << "> Palavra pesquisada: '" << word.first << "' | " << "Frequência da palavra pesquisada: '" << word.second << "'" << endl;
