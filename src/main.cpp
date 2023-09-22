@@ -3,6 +3,7 @@
 #include "include/heap.hpp"
 #include "include/binarytree.hpp"
 #include "include/avltree.hpp"
+#include "include/huffmantree.hpp"
 #define k 5
 
 int main() {
@@ -38,7 +39,6 @@ int main() {
 
         vector<pair<string, int>> topKWords = printMinHeap(filePath, minHeap, outFile, wordsToSearch, frequencyMap, k);
         
-
         BinaryTree binaryTree;
         fillBinaryTree(binaryTree, topKWords);
         printBinaryTreeInOrderToFile(binaryTree, outputFileName);
@@ -46,6 +46,10 @@ int main() {
         AVLTree avlTree;
         fillAvlTree(avlTree, topKWords);
         printAvlTreeInOrderToFile(avlTree, outputFileName);
+
+        HuffmanTree* raiz_huffman = new HuffmanTree();
+        raiz_huffman->constroi(topKWords);
+        raiz_huffman->printInOrderToFile(outputFileName);
 
         inputFile.close();
     }
