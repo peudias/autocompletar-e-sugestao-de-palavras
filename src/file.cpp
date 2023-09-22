@@ -1,30 +1,6 @@
 #include "include/file.hpp"
 #include "include/heap.hpp"
 
-vector<string> readUserFile(const string &filename){
-    vector<string> userWords;
-    ifstream inputFile(filename);
-
-    if (!inputFile.is_open()) {
-        cout << VERMELHO << "Erro ao abrir o arquivo de inserção do usuário: " << filename << RESET << endl;
-        return userWords;
-    }
-
-    string word;
-    while (inputFile >> word) {
-        userWords.push_back(word);
-    }
-
-    inputFile.close();
-
-    cout << VERDE << "Palavras coletadas do arquivo '" << filename << "':" << RESET << endl;
-    for (const string &w : userWords) {
-        cout << AZUL << w << RESET << endl;
-    }
-
-    return userWords;
-}
-
 unordered_set<string> readStopwords(const string &filename){
     unordered_set<string> stopwords;
     ifstream stopwordFile(filename);
@@ -35,8 +11,8 @@ unordered_set<string> readStopwords(const string &filename){
             stopwords.insert(stopword);
         }
         stopwordFile.close();
-    } else{
-        cout << VERMELHO << "Erro ao abrir o arquivo de stopwords!" << RESET << endl;
+    }else{
+        cout << VERMELHO << "Erro ao abrir o arquivo de " << RESET << "STOPWORDS! " << AMARELO << "(" <<  filename << ")" << RESET << endl;
     }
     return stopwords;
 }
@@ -80,40 +56,25 @@ void processText(istream &inputStream, unordered_map<string, int> &frequencyMap,
     }
 }
 
-void readTextFile(const string &filePath){
-    ifstream inputFile(filePath);
+void openTextFile(const string &filePath, ifstream &inputFile){
+    inputFile.open(filePath);
 
     if(!inputFile.is_open()){
-        cout << VERMELHO << "Erro ao abrir o arquivo de texto: " << filePath << RESET << endl;
+        cout << VERMELHO << "Erro ao abrir o arquivo de " << RESET << "TEXTO! " << MAGENTA << "(" <<  filePath << ")" << RESET << endl << endl;
         return;
     }
-
-    unordered_map<string, int> frequencyMap;
-    unordered_set<string> stopwords = readStopwords("./dataset/stopwords.txt");
-
-    processText(inputFile, frequencyMap, stopwords);
-    int k = 3;
-    processHash(frequencyMap, k);
-    
-    inputFile.close();
 }
 
-void searchWords(const string &palavra, const string &arquivo) {
-    ifstream arquivoTexto(arquivo);
-    if (!arquivoTexto.is_open()) {
-        cerr << "Erro ao abrir o arquivo: " << arquivo << endl;
-        return;
-    }
+vector<string> processDirectory(const string &directoryPath){
+    vector<string> filePaths;
 
-    string linha;
-    int numeroLinha = 0;
-    while (getline(arquivoTexto, linha)) {
-        numeroLinha++;
-        if (linha.find(palavra) != string::npos) {
-            //cout << VERDE << "Palavra encontrada em " << arquivo << " (linha " << numeroLinha << "): "  << endl;
-            // << RESET << linha << endl;
+    if(fs::is_directory(directoryPath)){
+        for(const auto &entry : fs::directory_iterator(directoryPath)){
+            if(entry.is_regular_file()){
+                string filePath = entry.path();
+                filePaths.push_back(filePath);
+            }
         }
     }
-
-    arquivoTexto.close();
+    return filePaths;
 }
