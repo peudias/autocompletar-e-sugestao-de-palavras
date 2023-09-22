@@ -55,6 +55,6 @@ void HuffmanTree::preOrdem(huffmanNode* no, ofstream& outputFile) {
 
 void HuffmanTree::printInOrderToFile(const string& fileName){
 	ofstream outputFile(fileName, ios::app);
-	outputFile << endl << "Árvore Huffman em ordem:" << endl;
+	outputFile << endl << "Árvore Huffman:" << endl;
     preOrdem(raiz_, outputFile);
 }

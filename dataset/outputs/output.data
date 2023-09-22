@@ -14,13 +14,13 @@ Palavras mais relevantes:
 Top-K-Elementos: 
 melhor (201); dados (201); implantação (267); segurança (268); utilização (400); 
 
-Árvore binária em ordem:
+Árvore binária:
 melhor (201); dados (201); implantação (267); segurança (268); utilização (400); 
 
-Árvore AVL em ordem:
+Árvore AVL:
 dados (201); implantação (267); melhor (201); segurança (268); utilização (400); 
 
-Árvore Huffman em ordem:
+Árvore Huffman:
 implantação (267); segurança (268); utilização (400); melhor (201); dados (201); 
 ----------------------------------------------------
 Arquivo: ./dataset/input/filosofia2.txt
@@ -38,13 +38,13 @@ Palavras mais relevantes:
 Top-K-Elementos: 
 condição (133); priori (144); mundo (144); sujeito (149); teoria (192); 
 
-Árvore binária em ordem:
+Árvore binária:
 condição (133); priori (144); mundo (144); sujeito (149); teoria (192); 
 
-Árvore AVL em ordem:
+Árvore AVL:
 condição (133); mundo (144); priori (144); sujeito (149); teoria (192); 
 
-Árvore Huffman em ordem:
+Árvore Huffman:
 mundo (144); sujeito (149); teoria (192); condição (133); priori (144); 
 ----------------------------------------------------
 Arquivo: ./dataset/input/globalizacao.txt
@@ -60,13 +60,13 @@ Palavras mais relevantes:
 Top-K-Elementos: 
 É (134); necessidade (134); importância (134); sentido (200); processo (200); 
 
-Árvore binária em ordem:
+Árvore binária:
 É (134); necessidade (134); importância (134); sentido (200); processo (200); 
 
-Árvore AVL em ordem:
+Árvore AVL:
 importância (134); necessidade (134); processo (200); sentido (200); É (134); 
 
-Árvore Huffman em ordem:
+Árvore Huffman:
 importância (134); sentido (200); processo (200); É (134); necessidade (134); 
 ----------------------------------------------------
 Arquivo: ./dataset/input/ti.txt
@@ -83,13 +83,13 @@ Palavras mais relevantes:
 Top-K-Elementos: 
 ti (201); informações (201); implantação (266); segurança (268); utilização (399); 
 
-Árvore binária em ordem:
+Árvore binária:
 ti (201); informações (201); implantação (266); segurança (268); utilização (399); 
 
-Árvore AVL em ordem:
+Árvore AVL:
 implantação (266); informações (201); segurança (268); ti (201); utilização (399); 
 
-Árvore Huffman em ordem:
+Árvore Huffman:
 implantação (266); segurança (268); utilização (399); ti (201); informações (201); 
 ----------------------------------------------------
 Arquivo: ./dataset/input/filosofia.txt
@@ -107,13 +107,13 @@ Palavras mais relevantes:
 Top-K-Elementos: 
 modo (129); mundo (134); condição (134); sujeito (145); teoria (176); 
 
-Árvore binária em ordem:
+Árvore binária:
 modo (129); mundo (134); condição (134); sujeito (145); teoria (176); 
 
-Árvore AVL em ordem:
+Árvore AVL:
 condição (134); modo (129); mundo (134); sujeito (145); teoria (176); 
 
-Árvore Huffman em ordem:
+Árvore Huffman:
 condição (134); sujeito (145); teoria (176); modo (129); mundo (134); 
 ----------------------------------------------------
 Arquivo: ./dataset/input/politica.txt
@@ -129,11 +129,11 @@ Palavras mais relevantes:
 Top-K-Elementos: 
 atual (201); saúde (201); melhoria (201); políticas (267); político (400); 
 
-Árvore binária em ordem:
+Árvore binária:
 atual (201); saúde (201); melhoria (201); políticas (267); político (400); 
 
-Árvore AVL em ordem:
+Árvore AVL:
 atual (201); melhoria (201); políticas (267); político (400); saúde (201); 
 
-Árvore Huffman em ordem:
+Árvore Huffman:
 melhoria (201); políticas (267); político (400); atual (201); saúde (201); 
