@@ -230,7 +230,7 @@ Ao concluir esta tarefa, teremos uma compreensão mais aprofundada das diferente
 
 </div>
 
-## Conclusão 🎯
+# Conclusão 🎯
 
 <div align="justify">
 
@@ -251,7 +251,7 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 | `make clean`                                                                                                                                            | Apaga a última compilação realizada contida na pasta build                              |
 | `make`                                                                                                                                                  | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build |
 | `make run`                                                                                                                                              | Executa o programa da pasta build após a realização da compilação                       |
-| `make r`                                                                                                                                                | Realiza o `make clean`, `make` e `make run` juntos                                      |
+| `make r`                                                                                                                                                | Realiza o `make clean`, `make` e `make run` em sequência                                |
 
 ## Comandos para Windows:
 
@@ -263,9 +263,9 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 
 # Contatos 📇
 
-| Contato    | Telegram                                                                                                                                                                             | LinkedIn                                                                                                                                                                                           | GitHub                                                                                                                                                                                       |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Pedro Dias | <a href="https://t.me/phpdias"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> | <a href="https://linkedin.com/in/phpd"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></div> | <a href="https://github.com/phpdias"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></div> |
+| Contato    | Telegram                                                                                                                                                                             | LinkedIn                                                                                                                                                                                           | Email                                                                                                                                                                                                                                                                                   |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pedro Dias | <a href="https://t.me/phpdias"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> | <a href="https://linkedin.com/in/phpd"><img align="center" height="24px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></div> | <a href="mailto:phpdias@outlook.com?subject=[GitHub]%20Autocompletar%20E%20Sugestão%20De%20Palavras"><img align="center" height="25px" width="150px" src="https://img.shields.io/badge/phpdias@outlook.com-100000?style=for-the-badge&logo=phpdias@outlook.com&logoColor=white"/></div> |
 
 ## Referências
 
