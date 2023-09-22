@@ -17,7 +17,7 @@
 ............................................................................
 6. A documentação apresenta uma discussão sobre o problema?
 7. A documentação apresenta como foi pensado a resolução do problema?
-8. A documentação apresenta pequenos exemplos para explicar o funcionamento?
+8. A documentação apresenta pequenos exemplos para explicar o funcionamento? ✅
 9. A documentação apresenta conclusões sobre o trabalho?
 10. A documentação detalha a forma como o código deve ser compilado? ✅
 
@@ -40,10 +40,10 @@ Nesse último ponto, tente realizar um paralelo com outras estruturas para demon
 adotadas são as melhores possíveis para o problema em questão.
 
 1. Apresentando o problema ✅
-2. Regras
+2. Regras ✅
 3. Implementação do problema
-4. Resolução do problema
-5. Experimentação
+4. Resolução do problema ✅
+5. Experimentação ✅
 6. Análise de Complexidade
 7. Conclusão
 8. Compilação e Execução ✅
@@ -118,7 +118,7 @@ A abordagem consistirá em três etapas diferentes:
 
 <div align="justify">
 
-Implementaremos uma árvore binária tradicional, selecionando as palavras mais relevantes e relacionadas à pesquisa em cada texto. A relevância de uma palavra será determinada por sua frequência e proximidade à palavra de pesquisa.
+Implementaremos uma [árvore binária tradicional](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/src/binarytree.cpp), selecionando as palavras mais relevantes e relacionadas à pesquisa em cada texto. A relevância de uma palavra será determinada por sua frequência e proximidade à palavra de pesquisa.
 
 </div>
 
@@ -126,7 +126,7 @@ Implementaremos uma árvore binária tradicional, selecionando as palavras mais 
 
 <div align="justify">
 
-Exploraremos o uso do código de Huffman para otimizar a árvore binária padrão. Calcularemos códigos para cada palavra e reorganizaremos a estrutura da árvore com base nesses códigos. Avaliaremos se essa abordagem oferece vantagens em relação à anterior.
+Exploraremos o uso do [código de Huffman](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/src/huffmantree.cpp) para otimizar a árvore binária padrão. Calcularemos códigos para cada palavra e reorganizaremos a estrutura da árvore com base nesses códigos. Avaliaremos se essa abordagem oferece vantagens em relação à anterior.
 
 </div>
 
@@ -134,7 +134,7 @@ Exploraremos o uso do código de Huffman para otimizar a árvore binária padrã
 
 <div align="justify">
 
-Implementaremos uma árvore AVL e repetiremos o processo de análise. Compararemos o tempo médio de processamento entre a construção da estrutura e a geração de saída em comparação com as abordagens anteriores.
+Implementaremos uma [árvore AVL](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/src/avltree.cpp) e repetiremos o processo de análise. Compararemos o tempo médio de processamento entre a construção da estrutura e a geração de saída em comparação com as abordagens anteriores.
 
 </div>
 
@@ -151,20 +151,26 @@ Após a conclusão do projeto, temos aqui um algoritmo capaz de:
 - [✔️] Utilização da estrutura de dados Árvore Binária;
 - [✔️] Utilização da estrutura de dados Árvore AVL;
 - [✔️] Utilização da estrutura de dados Árvore Huffman;
-- [✔️] Demonstrar as **palavras mais relevantes** de um conjunto de dados utilizando cada uma das estruturas acima, identificando a palavra e a frequência da palavra para cada arquivo de texto disponível.
+- [✔️] Demonstrar as **palavras mais relevantes** de um conjunto de dados utilizando cada uma das estruturas acima, identificando a palavra e a frequência da palavra para cada arquivo de texto, se assim disponível.
 
 ## Experimentação 🔬
 
-Ao concluir esta tarefa, teremos uma compreensão mais aprofundada das diferentes implementações das árvores binárias e sua influência no sistema de autocompletar e sugestões de
-palavras. A análise comparativa nos permitirá avaliar a eficácia de cada abordagem em termos de desempenho e funcionalidade.
-
 <div align="justify">
-	
+  
 </div>
 
 ### Entradas de dados necessárias 🗂️
 
 <div align="justify">
+
+Dentro do programa, encontra-se uma pasta denominada [dataset](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/tree/main/dataset), a qual abriga, em seu interior, outros 4 diretórios, nomeados como:
+
+- [input](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/tree/main/dataset/input) que contém os textos a serem analisados;
+- [outputs](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/tree/main/dataset/outputs) que contém o arquivo com os resultados;
+
+- [stopwords](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/tree/main/dataset/stopwords) que contém palavras a serem desconsideradas dos textos originais;
+
+- [wordToSearch](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/tree/main/dataset/wordToSearch) que contém as palavras inseridas pelo usuário para serem analisadas.
 
 </div>
 
@@ -172,11 +178,21 @@ palavras. A análise comparativa nos permitirá avaliar a eficácia de cada abor
 
 <div align="justify">
 
+Neste diretório se encontram os arquivos em texto que serão lidos análise.
+
+O usuário é livre para definir se todos os arquivos dentro desse diretório sejam ou não do tipo `.txt`. Da mesma forma podem ser nomeados sem qualquer restrição.
+
+**Obs:. Afim de garantir o correto funcionamento do algoritmo, recomenda-se utilizar arquivos '.txt' como padrão. Arquivos de outra natureza ficam por conta e risco do usuário.**
+
 </div>
 
 #### Arquivo stopwords.txt 🛑
 
 <div align="justify">
+
+Este arquivo foi retirado desse repositório git utilizado como referência: [Top-K-Elementos](https://github.com/phpdias/top-k-elementos) [^1]
+
+Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o intuito inicial a utilização dessa forma.
 
 </div>
 
@@ -184,16 +200,34 @@ palavras. A análise comparativa nos permitirá avaliar a eficácia de cada abor
 
 <div align="justify">
 
+Após garantir a correta configuração dos arquivos acima, ao executar o programa, a seguinte saída será gerada em [`output.data`](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/dataset/outputs/output.data).
+
+Observe que existe um padrão nas impressões:
+
+> Primeiro é identificado o arquivo analisado.
+
+> Em seguida é mostrado a quantidade de palavras inseridas pelo usuário que foram analisadas naquele texto e a frequência dessas palavras no arquivo de texto em questão. Observe que existe uma nota pontuando que, caso alguma palavra inserida pelo usuário não esteja presente na contagem, significa que essa palavra em questão não está presente no texto desse arquivo.
+
+> É demonstrado as palavras mais relevantes, separadas por: Top-K-Elementos utilizando MinHeap; Árvores Binária, AVL e Huffman utilizando como base o Top-K.
+
+> Esse processo ocorre a quantidade de vezes correspondente a quantidade de textos para serem analisados.
+
+O resultado obtido está na imagem abaixo.
+
 </div>
 
 <div align="center">
+
+![Alt text](image-1.png)
 
 </div>
 
 ## Análise de Complexidade 🔎
 
 <div align="justify">
-  
+
+Ao concluir esta tarefa, teremos uma compreensão mais aprofundada das diferentes implementações das árvores binárias e sua influência no sistema de autocompletar e sugestões de palavras. A análise comparativa de complexidade nos permitirá avaliar a eficácia de cada abordagem em termos de desempenho e funcionalidade.
+
 </div>
 
 ## Conclusão 🎯
@@ -235,6 +269,6 @@ Este algoritmo possui um arquivo Makefile e um arquivo CMakeLists que realiza to
 
 ## Referências
 
-[^1]: [GitHub](https://github.com/phpdias/labirinto-recorrente)
+[^1]: [GitHub](https://github.com/phpdias/top-k-elementos)
 [^2]: [CppReference](https://en.cppreference.com/)
 [^3]: [CPlusPlus](https://cplusplus.com/)
