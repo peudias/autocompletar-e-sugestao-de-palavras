@@ -49,7 +49,7 @@ vector<pair<string, int>> printMinHeap(const string &fileName, priority_queue<He
         while(!newHeap.empty()){
             HeapNode newNode = newHeap.top();
             newHeap.pop();
-            outputStream << newNode.word << " (" << newNode.count << "), ";
+            outputStream << newNode.word << " (" << newNode.count << "); ";
             topKWords.emplace_back(newNode.word, newNode.count);
         }
     }
