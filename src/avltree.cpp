@@ -93,7 +93,7 @@ void AVLTree::printInOrderToFile(avlNode* root, ofstream& outputFile) const {
     }
 
     printInOrderToFile(root->left, outputFile);
-    outputFile << root->data.first << " (" << root->data.second << "), ";
+    outputFile << root->data.first << " (" << root->data.second << "); ";
     printInOrderToFile(root->right, outputFile);
 }
 

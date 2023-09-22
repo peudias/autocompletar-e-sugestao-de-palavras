@@ -43,7 +43,7 @@ void BinaryTree::printInOrderToFile(binaryNode* root, ofstream& outputFile) cons
     }
 
     printInOrderToFile(root->left, outputFile);
-    outputFile << root->data.first << " (" << root->data.second << "), ";
+    outputFile << root->data.first << " (" << root->data.second << "); ";
     printInOrderToFile(root->right, outputFile);
 }
 
