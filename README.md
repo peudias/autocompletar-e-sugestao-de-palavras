@@ -264,7 +264,7 @@ Ao concluir esta tarefa, teremos uma compreensão mais aprofundada das diferente
 
 <div align="justify">
 
-Com este projeto é possível concluir que essas implementações apresentam um conjunto de funcionalidades relacionadas ao processamento de texto e estruturas de dados de árvore.
+Com este projeto é possível concluir que:
 
 A primeira implementação lida com a manipulação de palavras, frequências e uma estrutura de árvore binária.
 A segunda implementação abordou a construção de uma Árvore de Huffman a partir de uma fila de prioridade, que é frequentemente usada para compressão de dados.
