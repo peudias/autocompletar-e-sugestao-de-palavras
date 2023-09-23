@@ -7,6 +7,11 @@
 #define k 5
 
 int main() {
+    clock_t start, end, startBinaryTree, endBinaryTree, startAVLTree, endAVLTree, startHuffmanTree, endHuffmanTree;
+    double timeTotal, timeBinaryTree, timeAVLTree, timeHuffmanTree;
+
+    start = clock();
+
     string textInput = "./dataset/input";
     string userInput = "./dataset/wordToSearch";
 
@@ -39,17 +44,26 @@ int main() {
 
         vector<pair<string, int>> topKWords = printMinHeap(filePath, minHeap, outFile, wordsToSearch, frequencyMap, k);
         
+        startBinaryTree = clock();
         BinaryTree binaryTree;
         fillBinaryTree(binaryTree, topKWords);
         printBinaryTreeInOrderToFile(binaryTree, outputFileName);
+        endBinaryTree = clock();
+        calcTime(timeBinaryTree, endBinaryTree, startBinaryTree, outputFileName);
 
+        startAVLTree = clock();
         AVLTree avlTree;
         fillAvlTree(avlTree, topKWords);
         printAvlTreeInOrderToFile(avlTree, outputFileName);
+        endAVLTree = clock();
+        calcTime(timeAVLTree, endAVLTree, startAVLTree, outputFileName);
 
+        startHuffmanTree = clock();
         HuffmanTree* raiz_huffman = new HuffmanTree();
         raiz_huffman->constroi(topKWords);
         raiz_huffman->printInOrderToFile(outputFileName);
+        endHuffmanTree = clock();
+        calcTime(timeHuffmanTree, endHuffmanTree, startHuffmanTree, outputFileName);
 
         inputFile.close();
     }

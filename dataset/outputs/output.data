@@ -1,0 +1,180 @@
+
+----------------------------------------------------
+Arquivo: ./dataset/input/ti2.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
+Quantidade de palavras analisadas: 3
+> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '200'
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '199'
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
+
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+melhor (201); dados (201); implantação (267); segurança (268); utilização (400); 
+
+Árvore binária:
+melhor (201); dados (201); implantação (267); segurança (268); utilização (400); 
+  ->Tempo de execução para essa estrutura: 0.038 milissegundos
+
+
+Árvore AVL:
+dados (201); implantação (267); melhor (201); segurança (268); utilização (400); 
+  ->Tempo de execução para essa estrutura: 0.015 milissegundos
+
+
+Árvore Huffman:
+implantação (267); segurança (268); utilização (400); melhor (201); dados (201); 
+  ->Tempo de execução para essa estrutura: 0.022 milissegundos
+
+
+----------------------------------------------------
+Arquivo: ./dataset/input/filosofia2.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
+Quantidade de palavras analisadas: 4
+> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
+> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '86'
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '20'
+
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+condição (133); priori (144); mundo (144); sujeito (149); teoria (192); 
+
+Árvore binária:
+condição (133); priori (144); mundo (144); sujeito (149); teoria (192); 
+  ->Tempo de execução para essa estrutura: 0.049 milissegundos
+
+
+Árvore AVL:
+condição (133); mundo (144); priori (144); sujeito (149); teoria (192); 
+  ->Tempo de execução para essa estrutura: 0.015 milissegundos
+
+
+Árvore Huffman:
+mundo (144); sujeito (149); teoria (192); condição (133); priori (144); 
+  ->Tempo de execução para essa estrutura: 0.023 milissegundos
+
+
+----------------------------------------------------
+Arquivo: ./dataset/input/globalizacao.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
+Quantidade de palavras analisadas: 2
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
+
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+É (134); necessidade (134); importância (134); sentido (200); processo (200); 
+
+Árvore binária:
+É (134); necessidade (134); importância (134); sentido (200); processo (200); 
+  ->Tempo de execução para essa estrutura: 0.051 milissegundos
+
+
+Árvore AVL:
+importância (134); necessidade (134); processo (200); sentido (200); É (134); 
+  ->Tempo de execução para essa estrutura: 0.014 milissegundos
+
+
+Árvore Huffman:
+importância (134); sentido (200); processo (200); É (134); necessidade (134); 
+  ->Tempo de execução para essa estrutura: 0.022 milissegundos
+
+
+----------------------------------------------------
+Arquivo: ./dataset/input/ti.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
+Quantidade de palavras analisadas: 3
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '200'
+> Palavra pesquisada: 'hardware' | Frequência da palavra pesquisada: '199'
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '199'
+
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+ti (201); informações (201); implantação (266); segurança (268); utilização (399); 
+
+Árvore binária:
+ti (201); informações (201); implantação (266); segurança (268); utilização (399); 
+  ->Tempo de execução para essa estrutura: 0.039 milissegundos
+
+
+Árvore AVL:
+implantação (266); informações (201); segurança (268); ti (201); utilização (399); 
+  ->Tempo de execução para essa estrutura: 0.015 milissegundos
+
+
+Árvore Huffman:
+implantação (266); segurança (268); utilização (399); ti (201); informações (201); 
+  ->Tempo de execução para essa estrutura: 0.022 milissegundos
+
+
+----------------------------------------------------
+Arquivo: ./dataset/input/filosofia.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
+Quantidade de palavras analisadas: 4
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '94'
+> Palavra pesquisada: 'media' | Frequência da palavra pesquisada: '19'
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '19'
+> Palavra pesquisada: 'filosofia' | Frequência da palavra pesquisada: '19'
+
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+modo (129); mundo (134); condição (134); sujeito (145); teoria (176); 
+
+Árvore binária:
+modo (129); mundo (134); condição (134); sujeito (145); teoria (176); 
+  ->Tempo de execução para essa estrutura: 0.041 milissegundos
+
+
+Árvore AVL:
+condição (134); modo (129); mundo (134); sujeito (145); teoria (176); 
+  ->Tempo de execução para essa estrutura: 0.014 milissegundos
+
+
+Árvore Huffman:
+condição (134); sujeito (145); teoria (176); modo (129); mundo (134); 
+  ->Tempo de execução para essa estrutura: 0.022 milissegundos
+
+
+----------------------------------------------------
+Arquivo: ./dataset/input/politica.txt
+
+Obs:. Se alguma palavra inserida pelo usuário não aparece aqui, significa que essa palavra não é frequente no arquivo em questão.
+
+Quantidade de palavras analisadas: 2
+> Palavra pesquisada: 'assim' | Frequência da palavra pesquisada: '201'
+> Palavra pesquisada: 'impacto' | Frequência da palavra pesquisada: '134'
+
+Palavras mais relevantes: 
+
+Top-K-Elementos: 
+atual (201); saúde (201); melhoria (201); políticas (267); político (400); 
+
+Árvore binária:
+atual (201); saúde (201); melhoria (201); políticas (267); político (400); 
+  ->Tempo de execução para essa estrutura: 0.018 milissegundos
+
+
+Árvore AVL:
+atual (201); melhoria (201); políticas (267); político (400); saúde (201); 
+  ->Tempo de execução para essa estrutura: 0.013 milissegundos
+
+
+Árvore Huffman:
+melhoria (201); políticas (267); político (400); atual (201); saúde (201); 
+  ->Tempo de execução para essa estrutura: 0.02 milissegundos
+

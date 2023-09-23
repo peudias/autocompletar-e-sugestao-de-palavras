@@ -113,7 +113,7 @@ void printAvlTreeInOrderToFile(const AVLTree& avlTree, const string& fileName) {
 
     outputFile << endl << "Árvore AVL:" << endl;
     avlTree.printInOrderToFile(outputFile);
-    outputFile << endl;
+    // outputFile << endl;
 
     outputFile.close();
 }
