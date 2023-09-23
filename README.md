@@ -25,27 +25,27 @@
 A documentação a ser produzida deve conter, pelo menos, as seguintes partes:
 • Um detalhamento mínimo que explique as fases de especificação, projeto e implemen-
 tação. Nessa etapa, deve-se incluir uma ampla discussão sobre as estruturas utilizadas
-e o motivo de sua escolha para manter o desempenho da solução.
+e o motivo de sua escolha para manter o desempenho da solução. ✅
 
-• Para os arquivos utilizados para teste, uma descrição da saída esperada.
+• Para os arquivos utilizados para teste, uma descrição da saída esperada. ✅
 
 • Uma parte do README.md contendo todas as instruções necessárias para a execução
-de seu trabalho para arquivos de entrada diferentes dos adotados durante os testes.
+de seu trabalho para arquivos de entrada diferentes dos adotados durante os testes. ✅
 
 • Um git contendo todo o projeto, bem como, toda descrição pertinente sobre sua execução,
-projeto e implementação.
+projeto e implementação. ✅
 
 •  Neste documento (README.mb), espera-se observar uma discussão sobre as estruturas adotadas e o motivo de tal utilização.
 Nesse último ponto, tente realizar um paralelo com outras estruturas para demonstrar de fato que as estruturas
-adotadas são as melhores possíveis para o problema em questão.
+adotadas são as melhores possíveis para o problema em questão. ✅
 
 1. Apresentando o problema ✅
 2. Regras ✅
-3. Implementação do problema
+3. Implementação do problema ✅
 4. Resolução do problema ✅
 5. Experimentação ✅
 6. Análise de Complexidade
-7. Conclusão
+7. Conclusão ✅
 8. Compilação e Execução ✅
 
 
@@ -252,17 +252,25 @@ O resultado obtido está na imagem abaixo.
 
 </div>
 
-## Análise de Complexidade 🔎
+<!-- ## Análise de Complexidade 🔎
 
 <div align="justify">
 
 Ao concluir esta tarefa, teremos uma compreensão mais aprofundada das diferentes implementações das árvores binárias e sua influência no sistema de autocompletar e sugestões de palavras. A análise comparativa de complexidade nos permitirá avaliar a eficácia de cada abordagem em termos de desempenho e funcionalidade.
 
-</div>
+</div> -->
 
 # Conclusão 🎯
 
 <div align="justify">
+
+Com este projeto é possível concluir que essas implementações apresentam um conjunto de funcionalidades relacionadas ao processamento de texto e estruturas de dados de árvore.
+
+A primeira implementação lida com a manipulação de palavras, frequências e uma estrutura de árvore binária.
+A segunda implementação abordou a construção de uma Árvore de Huffman a partir de uma fila de prioridade, que é frequentemente usada para compressão de dados.
+A terceira implementação trata de uma Árvore AVL, que é uma árvore de busca binária equilibrada por altura, útil para armazenar e recuperar dados de maneira eficiente.
+
+Essas implementações demonstram como as estruturas de dados de árvore podem ser aplicadas em tarefas de processamento de texto, análise de dados e organização de informações. As árvores de Huffman são usadas para representar códigos de compressão eficientes, enquanto as árvores binárias e AVLs são usadas para armazenar e consultar dados de maneira eficaz.
 
 </div>
 
