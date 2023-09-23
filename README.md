@@ -132,6 +132,18 @@ A inserção de pares (palavra, frequência) é suportada pela função `insert`
 
 Exploraremos o uso do [código de Huffman](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/src/huffmantree.cpp) para otimizar a árvore binária padrão. Calcularemos códigos para cada palavra e reorganizaremos a estrutura da árvore com base nesses códigos. Avaliaremos se essa abordagem oferece vantagens em relação à anterior.
 
+Essa implementação de uma Árvore de Huffman oferece um conjunto de funcionalidades fundamentais. Essas quatro funções compõem a sua implementação.
+
+A primeira função, `HuffmanTree::insere`, é responsável por inserir nós na fila de prioridade da árvore. Essa fila mantém os nós ordenados de acordo com suas frequências, um elemento-chave na construção da Árvore de Huffman.
+
+A segunda função, `HuffmanTree::constroi`, é crucial para a criação da própria árvore. Ela utiliza uma lista de palavras-chave e suas frequências para inicializar a fila de prioridade com nós individuais para cada palavra-chave. A partir daí, a função combina iterativamente esses nós para construir a árvore de Huffman. A ordenação crescente da fila de prioridade é essencial para garantir a correta construção da árvore.
+
+A terceira função, `HuffmanTree::preOrdem`, realiza uma travessia pré-ordem na árvore já construída. Durante essa travessia, ela escreve as palavras e suas frequências em um arquivo de saída, o que é útil para representar a estrutura da árvore e suas frequências associadas.
+
+Por fim, a quarta função, `HuffmanTree::printInOrderToFile`, abre um arquivo de saída e imprime a representação da árvore de Huffman em ordem pré-ordem nesse arquivo. Isso permite que a estrutura da árvore seja visualizada e utilizada posteriormente.
+
+A implementação dessa estrutura é valiosa e oferece vantagens na compressão de dados, pois a Árvore de Huffman resultante permite representar palavras mais frequentes com códigos mais curtos, economizando espaço de armazenamento. As funções desempenham papéis específicos na criação e na representação dessa estrutura de dados fundamental para a compressão eficiente de informações.
+
 </div>
 
 - **Etapa 3: Árvore AVL**
