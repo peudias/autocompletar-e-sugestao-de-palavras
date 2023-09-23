@@ -120,6 +120,10 @@ A abordagem consistirá em três etapas diferentes:
 
 Implementaremos uma [árvore binária tradicional](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/src/binarytree.cpp), selecionando as palavras mais relevantes e relacionadas à pesquisa em cada texto. A relevância de uma palavra será determinada por sua frequência e proximidade à palavra de pesquisa.
 
+Essa implementação de uma Árvore Binária oferece um conjunto de funcionalidades essenciais. Inicialmente, o construtor da classe `BinaryTree` estabelece a árvore com uma raiz nula. O destrutor, por sua vez, utiliza a função `destroyTree` para efetuar a liberação de memória, garantindo a gestão adequada dos nós da árvore.
+
+A inserção de pares (palavra, frequência) é suportada pela função `insert`, mantendo a árvore ordenada com base nas frequências das palavras. A impressão dos nós em ordem (in-order), incluindo palavras e frequências, é realizada pela função `printInOrderToFile`. Além disso, duas funções complementares, `fillBinaryTree` e `printBinaryTreeInOrderToFile`, permitem preencher a árvore com dados relevantes a partir de um vetor de pares e imprimir a representação da árvore ordenada em um arquivo, respectivamente.
+
 </div>
 
 - **Etapa 2: Codificação de Huffman**
