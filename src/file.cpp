@@ -82,5 +82,5 @@ vector<string> processDirectory(const string &directoryPath){
 void calcTime(double& timeBinaryTree, clock_t& endBinaryTree, clock_t& startBinaryTree, const string& fileName) {
     ofstream outputFile(fileName, ios::app);
     timeBinaryTree = (double)(endBinaryTree - startBinaryTree) * 1000 / CLOCKS_PER_SEC;
-    outputFile << setw(4) << endl << "->" << "Tempo de execução para essa estrutura: " << timeBinaryTree << " milissegundos" << endl << endl;
+    outputFile << setw(4) << endl << "-> " << "Tempo de execução para essa estrutura: " << timeBinaryTree << " milissegundos" << endl << endl;
 }

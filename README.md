@@ -210,6 +210,8 @@ Observe que existe um padrão nas impressões:
 
 > É demonstrado as palavras mais relevantes, separadas por: Top-K-Elementos utilizando MinHeap; Árvores Binária, AVL e Huffman utilizando como base o Top-K.
 
+> Por último, mostra o tempo de execução daquela estrutura para aquele conjunto de dados.
+
 > Esse processo ocorre a quantidade de vezes correspondente a quantidade de textos para serem analisados.
 
 O resultado obtido está na imagem abaixo.

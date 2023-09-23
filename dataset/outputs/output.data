@@ -16,17 +16,17 @@ melhor (201); dados (201); implantação (267); segurança (268); utilização (
 
 Árvore binária:
 melhor (201); dados (201); implantação (267); segurança (268); utilização (400); 
-  ->Tempo de execução para essa estrutura: 0.038 milissegundos
+ -> Tempo de execução para essa estrutura: 0.033 milissegundos
 
 
 Árvore AVL:
 dados (201); implantação (267); melhor (201); segurança (268); utilização (400); 
-  ->Tempo de execução para essa estrutura: 0.015 milissegundos
+ -> Tempo de execução para essa estrutura: 0.011 milissegundos
 
 
 Árvore Huffman:
 implantação (267); segurança (268); utilização (400); melhor (201); dados (201); 
-  ->Tempo de execução para essa estrutura: 0.022 milissegundos
+ -> Tempo de execução para essa estrutura: 0.017 milissegundos
 
 
 ----------------------------------------------------
@@ -47,17 +47,17 @@ condição (133); priori (144); mundo (144); sujeito (149); teoria (192);
 
 Árvore binária:
 condição (133); priori (144); mundo (144); sujeito (149); teoria (192); 
-  ->Tempo de execução para essa estrutura: 0.049 milissegundos
+ -> Tempo de execução para essa estrutura: 0.034 milissegundos
 
 
 Árvore AVL:
 condição (133); mundo (144); priori (144); sujeito (149); teoria (192); 
-  ->Tempo de execução para essa estrutura: 0.015 milissegundos
+ -> Tempo de execução para essa estrutura: 0.012 milissegundos
 
 
 Árvore Huffman:
 mundo (144); sujeito (149); teoria (192); condição (133); priori (144); 
-  ->Tempo de execução para essa estrutura: 0.023 milissegundos
+ -> Tempo de execução para essa estrutura: 0.017 milissegundos
 
 
 ----------------------------------------------------
@@ -76,17 +76,17 @@ Top-K-Elementos:
 
 Árvore binária:
 É (134); necessidade (134); importância (134); sentido (200); processo (200); 
-  ->Tempo de execução para essa estrutura: 0.051 milissegundos
+ -> Tempo de execução para essa estrutura: 0.014 milissegundos
 
 
 Árvore AVL:
 importância (134); necessidade (134); processo (200); sentido (200); É (134); 
-  ->Tempo de execução para essa estrutura: 0.014 milissegundos
+ -> Tempo de execução para essa estrutura: 0.01 milissegundos
 
 
 Árvore Huffman:
 importância (134); sentido (200); processo (200); É (134); necessidade (134); 
-  ->Tempo de execução para essa estrutura: 0.022 milissegundos
+ -> Tempo de execução para essa estrutura: 0.014 milissegundos
 
 
 ----------------------------------------------------
@@ -106,17 +106,17 @@ ti (201); informações (201); implantação (266); segurança (268); utilizaç�
 
 Árvore binária:
 ti (201); informações (201); implantação (266); segurança (268); utilização (399); 
-  ->Tempo de execução para essa estrutura: 0.039 milissegundos
+ -> Tempo de execução para essa estrutura: 0.014 milissegundos
 
 
 Árvore AVL:
 implantação (266); informações (201); segurança (268); ti (201); utilização (399); 
-  ->Tempo de execução para essa estrutura: 0.015 milissegundos
+ -> Tempo de execução para essa estrutura: 0.011 milissegundos
 
 
 Árvore Huffman:
 implantação (266); segurança (268); utilização (399); ti (201); informações (201); 
-  ->Tempo de execução para essa estrutura: 0.022 milissegundos
+ -> Tempo de execução para essa estrutura: 0.014 milissegundos
 
 
 ----------------------------------------------------
@@ -137,17 +137,17 @@ modo (129); mundo (134); condição (134); sujeito (145); teoria (176);
 
 Árvore binária:
 modo (129); mundo (134); condição (134); sujeito (145); teoria (176); 
-  ->Tempo de execução para essa estrutura: 0.041 milissegundos
+ -> Tempo de execução para essa estrutura: 0.015 milissegundos
 
 
 Árvore AVL:
 condição (134); modo (129); mundo (134); sujeito (145); teoria (176); 
-  ->Tempo de execução para essa estrutura: 0.014 milissegundos
+ -> Tempo de execução para essa estrutura: 0.01 milissegundos
 
 
 Árvore Huffman:
 condição (134); sujeito (145); teoria (176); modo (129); mundo (134); 
-  ->Tempo de execução para essa estrutura: 0.022 milissegundos
+ -> Tempo de execução para essa estrutura: 0.014 milissegundos
 
 
 ----------------------------------------------------
@@ -166,15 +166,15 @@ atual (201); saúde (201); melhoria (201); políticas (267); político (400);
 
 Árvore binária:
 atual (201); saúde (201); melhoria (201); políticas (267); político (400); 
-  ->Tempo de execução para essa estrutura: 0.018 milissegundos
+ -> Tempo de execução para essa estrutura: 0.013 milissegundos
 
 
 Árvore AVL:
 atual (201); melhoria (201); políticas (267); político (400); saúde (201); 
-  ->Tempo de execução para essa estrutura: 0.013 milissegundos
+ -> Tempo de execução para essa estrutura: 0.01 milissegundos
 
 
 Árvore Huffman:
 melhoria (201); políticas (267); político (400); atual (201); saúde (201); 
-  ->Tempo de execução para essa estrutura: 0.02 milissegundos
+ -> Tempo de execução para essa estrutura: 0.014 milissegundos
 
