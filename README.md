@@ -15,7 +15,7 @@
 4. O código está bem estruturado e organizado? ✅
 5. O código bem como a entrada seguem os padrões de pasta e nomes definidos? ✅
 ............................................................................
-6. A documentação apresenta uma discussão sobre o problema?
+6. A documentação apresenta uma discussão sobre o problema? ✅
 7. A documentação apresenta como foi pensado a resolução do problema?
 8. A documentação apresenta pequenos exemplos para explicar o funcionamento? ✅
 9. A documentação apresenta conclusões sobre o trabalho?
@@ -124,6 +124,8 @@ Essa implementação de uma Árvore Binária oferece um conjunto de funcionalida
 
 A inserção de pares (palavra, frequência) é suportada pela função `insert`, mantendo a árvore ordenada com base nas frequências das palavras. A impressão dos nós em ordem (in-order), incluindo palavras e frequências, é realizada pela função `printInOrderToFile`. Além disso, duas funções complementares, `fillBinaryTree` e `printBinaryTreeInOrderToFile`, permitem preencher a árvore com dados relevantes a partir de um vetor de pares e imprimir a representação da árvore ordenada em um arquivo, respectivamente.
 
+> Tempo médio levando em consideração o conjunto de dados que será apresentado na experimentação: 0.021 milissegundos.
+
 </div>
 
 - **Etapa 2: Codificação de Huffman**
@@ -144,6 +146,8 @@ Por fim, a quarta função, `HuffmanTree::printInOrderToFile`, abre um arquivo d
 
 A implementação dessa estrutura é valiosa e oferece vantagens na compressão de dados, pois a Árvore de Huffman resultante permite representar palavras mais frequentes com códigos mais curtos, economizando espaço de armazenamento. As funções desempenham papéis específicos na criação e na representação dessa estrutura de dados fundamental para a compressão eficiente de informações.
 
+> Tempo médio levando em consideração o conjunto de dados que será apresentado na experimentação: 0.064 milissegundos.
+
 </div>
 
 - **Etapa 3: Árvore AVL**
@@ -151,6 +155,14 @@ A implementação dessa estrutura é valiosa e oferece vantagens na compressão 
 <div align="justify">
 
 Implementaremos uma [árvore AVL](https://github.com/phpdias/autocompletar-e-sugestao-de-palavras/blob/main/src/avltree.cpp) e repetiremos o processo de análise. Compararemos o tempo médio de processamento entre a construção da estrutura e a geração de saída em comparação com as abordagens anteriores.
+
+A Árvore AVL é uma árvore de busca binária que mantém o equilíbrio, garantindo que a diferença de altura entre suas subárvores esquerda e direita seja no máximo uma unidade.
+
+Essa implementação inclui funções para calcular a altura de um nó, o fator de balanceamento de um nó e atualizar a altura de um nó com base em suas subárvores. Também inclui rotações para manter o balanceamento e uma função de inserção que mantém a propriedade AVL após inserir um novo elemento.
+
+Além disso, há funções para imprimir a árvore em ordem em um arquivo e preencher a árvore a partir de um vetor de entrada. Essa implementação é útil para operações eficientes de busca e inserção em conjuntos de dados ordenados.
+
+> Tempo médio levando em consideração o conjunto de dados que será apresentado na experimentação: 0.09 milissegundos.
 
 </div>
 
