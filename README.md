@@ -218,7 +218,7 @@ O resultado obtido está na imagem abaixo.
 
 <div align="center">
 
-![Alt text](image-1.png)
+![Alt text](image.png)
 
 </div>
 
